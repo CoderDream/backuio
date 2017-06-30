@@ -45,10 +45,10 @@ eclipse导入新工程报错：
 
 pom.xml
 
+	<properties>
+		<argLine>-Dfile.encoding=UTF-8</argLine>
+	</properties>
 	<build>
-		<properties>
-	        <argLine>-Dfile.encoding=UTF-8</argLine>
-	    </properties>
 		<finalName>pdrc</finalName>
 		<plugins>
 			<plugin>
