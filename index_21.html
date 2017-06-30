@@ -51,8 +51,10 @@
         var url = "http://www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getStationAndTimeByStationName?UserID=";
 
         $("#ajaxbtn").on("click", function() {
+            $.mobile.loading("show");
             $.get(url, {TrainCode:"G1",StartStation:"北京南",ArriveStation:"上海虹桥"},function(data) {
                 console.log(data);
+                $.mobile.loading("hide");
             });            
         });
     });

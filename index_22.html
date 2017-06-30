@@ -48,11 +48,13 @@
 <script src="js/jquery.mobile-1.4.5.js"></script>
 <script>
     $(document).on("pageinit", "#index", function() {
-        var url = "http://www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getStationAndTimeByStationName?UserID=";
+        var url = "http://www.corsproxy.com/www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getDetailInfoByTrainCode?TrainCode=G1&UserID=";
 
         $("#ajaxbtn").on("click", function() {
+            $.mobile.loading("show");
             $.get(url, {TrainCode:"G1",StartStation:"北京南",ArriveStation:"上海虹桥"},function(data) {
                 console.log(data);
+                $.mobile.loading("hide");
             });            
         });
     });
