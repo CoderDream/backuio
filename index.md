@@ -52,6 +52,7 @@ pom.xml
 		<finalName>pdrc</finalName>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
 				<configuration>
@@ -75,3 +76,13 @@ pom.xml
 			</plugin>
 		</plugins>
 	</build>
+
+
+
+TestNg
+----------
+
+eclipse插件地址
+
+http://dl.bintray.com/testng-team/testng-eclipse-release/zipped/6.11.0.201703011520/
+
