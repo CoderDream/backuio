@@ -159,3 +159,75 @@ eclipse插件地址
 
 http://dl.bintray.com/testng-team/testng-eclipse-release/zipped/6.11.0.201703011520/
 
+
+
+sqlserver中如何修改字段类型？
+----------
+
+我有一张表，字段类型是varchar,我现在要把这个字段变成text类型，sql如何写？？？？？
+
+alter table 表名 alter column 字段名  text
+
+
+【Maven】maven工程 调试出现 Source not found ，开启jetty调试
+----------
+
+
+问题：maven工程使用jetty 调试出现 Source not found，解决如下：
+
+http://blog.csdn.net/dracotianlong/article/details/47975969
+
+1、开启MAVEN_OPTS的调试参数
+配置如下：
+
+	-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=1066
+
+配置的地方如下：
+
+![](http://img.blog.csdn.net/20150825135525560?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+
+2、参数含义如下：
+-Xdebug :通知JVM工作DEBUG模式下
+-Xrunjdwp:通知JVM使用Java Debug wire protocol来运行环境
+transport ：调试数据的传送方式，dt_socket使用socket方式
+server ：是否支持server模式的vm中
+suspend：是否在调试客户端建立起来后，再执行JVM
+address：是和调试器通信的端口，不是服务的端口号
+-Xnoagent: 禁用默认sun.tools.debug调试器 
+-Djava.compiler=NONE: 禁止JIT编译器的加载 
+dt_shmem: 共享内存传输，仅限于Windows 
+
+
+Map 遍历
+----------
+
+
+
+	Map<Integer, Integer> map = new HashMap<Integer, Integer>();  
+	  
+	for (Map.Entry<Integer, Integer> entry : map.entrySet()) {  
+	  
+	    System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());  
+	  
+	}  
+
+
+
+
+eclipse jetty debug source not found
+----------
+
+
+eclipse
+ 
+ 在eclipse中用jetty maven插件debug 时，会找不到源代码， 可以用以下办法解决：
+安装 Dynamic Source Lookup plugin 插件，
+插件主页如下，
+ https://github.com/ifedorenko/com.ifedorenko.m2e.sourcelookup
+
+	com.ifedorenko.m2e m2e extensions - http://ifedorenko.github.io/m2e-extras/
+
+![](http://dl2.iteye.com/upload/attachment/0110/2472/a62befbb-620f-3c96-9740-f0e828a645d2.bmp)
+
+
+然后点击【Add】按钮，等待几秒钟，Name就会刷出【m2e extentensions】出来！
