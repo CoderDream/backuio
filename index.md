@@ -231,3 +231,10 @@ eclipse
 
 
 然后点击【Add】按钮，等待几秒钟，Name就会刷出【m2e extentensions】出来！
+
+
+
+MyBatise 多个参数
+----------
+
+	where profileid = #{param1} and projectid = #{param2};
