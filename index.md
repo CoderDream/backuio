@@ -238,3 +238,42 @@ MyBatise 多个参数
 ----------
 
 	where profileid = #{param1} and projectid = #{param2};
+
+
+
+解决Dynamic Web Module 3.1 requires Java 1.7 or newer
+----------
+
+http://blog.csdn.net/qq_31614947/article/details/70231289
+
+概述：使用maven构建web项目时，经常会遇见这个问题，问题原因报错讲述的很清晰明了，就是web模块需要使用java1.7及以后的版本，目前的版本不符合。因而只需要修改java版本到1.7及以上即可。
+
+解决方法：
+
+1. 在eclipse 构建 web中关于java版本有三处需要修改统一。
+
+	（1）在 Java Build Path的libraries中修改
+
+	（2）在Java Compiler 中修改
+
+	（3）在Project Facet中修改
+
+2. 大部分按上上述修改就应该可以了，但总是有意外，还是报错。因为使用了 maven构建项目，因而最好在pom.xml文件中的build标签中加入以下代码：
+
+
+		<build>
+		  <plugins>
+		       <plugin>
+		             <groupId>org.apache.maven.plugins</groupId>
+		             <artifactId>maven-compiler-plugin</artifactId>
+		             <version>3.1</version>
+		             <configuration>
+		                 <source>1.7</source>     //如果是1.8，修改为1.8
+		                 <target>1.7</target>      //如果是1.8，修改为1.8
+		             </configuration>
+		       </plugin>
+		  </plugins>
+		</build>
+
+         
+3.最后再右键使用maven的Update Project 即可。 
