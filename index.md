@@ -277,3 +277,59 @@ http://blog.csdn.net/qq_31614947/article/details/70231289
 
          
 3.最后再右键使用maven的Update Project 即可。 
+
+
+maven项目配置jetty9插件
+----------
+	<plugin>
+		<groupId>org.eclipse.jetty</groupId>
+		<artifactId>jetty-maven-plugin</artifactId>
+		<version>9.4.6.v20170531</version>
+		<configuration>
+			<scanIntervalSeconds>10</scanIntervalSeconds>
+			<httpConnector>
+				<port>9080</port>
+				<idleTimeout>60000</idleTimeout>
+			</httpConnector>
+			<webApp>
+				<contextPath>/${project.build.finalName}</contextPath>
+			</webApp>
+		</configuration>
+	</plugin>
+
+
+
+
+Nginx启动报错：10013: An attempt was made to access a socket in a way forbidden
+----------
+
+Nginx在win7，win2008下启动报错：bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions) 。
+
+原因是Win7下nginx默认80端口被System占用，造成nginx启动报错的解决方案。
+
+在cmd窗口运行如下命令：
+ 
+	C:\Users\Administrator>netstat -aon | findstr :80  
+ 
+看到80端口果真被占用。发现占用的pid是4，名字是System。怎么禁用呢？
+ 
+1、打开注册表：regedit
+ 
+2、找到：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\HTTP
+ 
+3、找到一个REG_DWORD类型的项Start，将其改为0
+ 
+4、重启系统，System进程不会占用80端口
+ 
+重启之后，start nginx.exe 。在浏览器中，输入127.0.01，即可看到亲爱的“Welcome to nginx!” 了。
+
+
+
+http://www.360sdn.com/Nginx/2014/0807/4044.html
+
+
+如何查看某个端口被谁占用
+----------
+http://jingyan.baidu.com/article/3c48dd34491d47e10be358b8.html
+
+查看被占用端口对应的PID，输入命令：netstat -aon|findstr "49157"，回车，记下最后一位数字，即PID,这里是2720
