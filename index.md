@@ -333,3 +333,35 @@ http://www.360sdn.com/Nginx/2014/0807/4044.html
 http://jingyan.baidu.com/article/3c48dd34491d47e10be358b8.html
 
 查看被占用端口对应的PID，输入命令：netstat -aon|findstr "49157"，回车，记下最后一位数字，即PID,这里是2720
+
+
+Welcome to the PMD for Eclipse Update Site
+----------
+
+
+Please use from now on directly the following URL as the eclipse update site URL: 
+
+https://dl.bintray.com/pmd/pmd-eclipse-plugin/updates/
+
+This website provides updates for the Eclipse plugin for PMD.
+More Information
+
+	Release Notes
+	PMD Homepage
+	Bug Reports
+	Plugin installation
+
+If you have previously installed a version of the PMD Eclipse plugin prior to November 2012, then you should remove/uninstall it first. To install the PMD for Eclipse plugin:
+
+	In Eclipse, click on Help -> Install New Software...
+
+Click on Add..
+Enter the following:
+
+- Name: PMD for Eclipse Update Site
+- URL: https://dl.bintray.com/pmd/pmd-eclipse-plugin/updates/
+
+and click OK.
+You should see PMD for Eclipse 4. Select the checkbox next to it and click Next >.
+You'll need to accept the license and confirm you want to install a plugin that is not digitally signed. Go ahead and install it anyway.
+Restart eclipse.
