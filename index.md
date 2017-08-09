@@ -353,15 +353,29 @@ More Information
 
 If you have previously installed a version of the PMD Eclipse plugin prior to November 2012, then you should remove/uninstall it first. To install the PMD for Eclipse plugin:
 
-	In Eclipse, click on Help -> Install New Software...
+1. 	In Eclipse, click on Help -> Install New Software...
+1. Click on Add..
+1. Enter the following: 
+	- Name: PMD for Eclipse Update Site
+	- URL: https://dl.bintray.com/pmd/pmd-eclipse-plugin/updates/
+1. and click OK.
+1. You should see PMD for Eclipse 4. Select the checkbox next to it and click Next >.
+1. You'll need to accept the license and confirm you want to install a plugin that is not digitally signed. Go ahead and install it anyway.
+1. Restart eclipse.
 
-Click on Add..
-Enter the following:
 
-- Name: PMD for Eclipse Update Site
-- URL: https://dl.bintray.com/pmd/pmd-eclipse-plugin/updates/
 
-and click OK.
-You should see PMD for Eclipse 4. Select the checkbox next to it and click Next >.
-You'll need to accept the license and confirm you want to install a plugin that is not digitally signed. Go ahead and install it anyway.
-Restart eclipse.
+maven jetty指定端口启动
+----------
+
+
+eclipse里修改 Goals值
+
+Tomcat
+
+	-Dmaven.tomcat.port=8080 tomcat:run
+
+Jetty
+
+	-Djetty.port=8081 jetty:run
+
