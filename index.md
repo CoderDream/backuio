@@ -379,3 +379,9 @@ Jetty
 
 	-Djetty.port=8081 jetty:run
 
+
+JAVA保证顺序的MAP
+----------
+
+LinkedHashMap 才能保证迭代的时候取出的顺序和存入的顺序相同
+
