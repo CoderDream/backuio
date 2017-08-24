@@ -7,6 +7,7 @@
 
 1. [Java发送包含网络和本地图片的HTML邮件](http://blog.csdn.net/dadiyang/article/details/52352632)
 2. [查找项目经理超过x人的员工](https://coderdream.github.io/201734#20173401)
+3. [统计项目经理的项目个数](https://coderdream.github.io/201734#20173402)
 
 
 
