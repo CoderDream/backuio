@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>jQuery ajax读取本地json文件</title> 
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script> 
+<style type="text/css"> 
+#divframe{ border:1px solid #999; width:500px; margin:0 auto;} 
+.loadTitle{ background:#CCC; height:30px;} 
+</style> 
+<script type="text/javascript"> 
+$(function(){ 
+$("#btn").click(function(){ 
+	$.ajax({
+	   url: "js/ceshi.json",//json文件位置
+	   type: "GET",//请求方式为get
+	   dataType: "json", //返回数据格式为json
+	   success: function(data) {//请求成功完成后要执行的方法 
+		   //each循环 使用$.each方法遍历返回的数据date
+		   var str = '';
+		   $.each(data.first, function(i, item) {
+				str = '<div>姓名:' + item.name + '性别：' + item.sex + '</div>';
+				document.write(str);
+		   })
+		   var jsonTip = $("#jsonTip");
+		   jsonTip.html(str);
+	   }
+	})
+}) 
+</script> 
+</head> 
+<body onload=''> 
+<div id="divframe"> 
+<div class="loadTitle"> 
+<input type="button" value="获取数据" id="btn"/> 
+</div> 
+<div id="jsonTip"> 
+</div> 
+</div> 
+</body> 
+</html> 
