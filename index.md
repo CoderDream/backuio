@@ -1,9 +1,18 @@
 
+2017年第38周（2017/9/18~2017/9/24）
+----------
+1. [测试覆盖率工具：EclEmma](http://www.cnblogs.com/Ming8006/p/5811425.html)
+2. [TestNG.XML初级指南](http://www.cnblogs.com/choosewang/articles/3079983.html)
+3. [testng 教程](http://www.cnblogs.com/tobecrazy/p/4579414.html)
+4. [testng教程之testng.xml的配置和使用，以及参数传递](http://www.cnblogs.com/tobecrazy/p/4582173.html)
+3. [TestNG详解-深度好文](http://blog.csdn.net/lykangjia/article/details/56485295)
+2. [TextNG.xml配置实例](https://coderdream.github.io/201738#20173801)
 
 2017年第37周（2017/9/11~2017/9/17）
 ----------
 1. [jQuery中radio Button根据值选中](https://coderdream.github.io/201737#20173701)
 2. [jQuery 下拉选单默认选中与单击事件](https://coderdream.github.io/201737#20173702)
+3. [测试覆盖率工具：EclEmma](http://www.cnblogs.com/Ming8006/p/5811425.html)
 
 2017年第36周（2017/9/4~2017/9/10）
 ----------
