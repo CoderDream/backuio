@@ -7,6 +7,7 @@
 4. [testng教程之testng.xml的配置和使用，以及参数传递](http://www.cnblogs.com/tobecrazy/p/4582173.html)
 3. [TestNG详解-深度好文](http://blog.csdn.net/lykangjia/article/details/56485295)
 2. [TextNG.xml配置实例](https://coderdream.github.io/201738#20173801)
+3. [Java获取本机MAC地址、IP地址](https://coderdream.github.io/201738#20173802)
 
 2017年第37周（2017/9/11~2017/9/17）
 ----------
