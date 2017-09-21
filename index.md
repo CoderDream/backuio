@@ -5,10 +5,11 @@
 2. [TestNG.XML初级指南](http://www.cnblogs.com/choosewang/articles/3079983.html)
 3. [testng 教程](http://www.cnblogs.com/tobecrazy/p/4579414.html)
 4. [testng教程之testng.xml的配置和使用，以及参数传递](http://www.cnblogs.com/tobecrazy/p/4582173.html)
-3. [TestNG详解-深度好文](http://blog.csdn.net/lykangjia/article/details/56485295)
-2. [TextNG.xml配置实例](https://coderdream.github.io/201738#20173801)
-3. [Java获取本机MAC地址、IP地址](https://coderdream.github.io/201738#20173802)
-4. [WebDriver中页面滚动(scrolling)](http://blog.csdn.net/tanzhangwen/article/details/18733557)
+5. [TestNG详解-深度好文](http://blog.csdn.net/lykangjia/article/details/56485295)
+6. [TextNG.xml配置实例](https://coderdream.github.io/201738#20173801)
+7. [Java获取本机MAC地址、IP地址](https://coderdream.github.io/201738#20173802)
+8. [WebDriver中页面滚动(scrolling)](http://blog.csdn.net/tanzhangwen/article/details/18733557)
+9. [Chart Samples -- Bar Chart](https://coderdream.github.io/chart/sample_0101)
 
 2017年第37周（2017/9/11~2017/9/17）
 ----------
