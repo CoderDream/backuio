@@ -10,6 +10,7 @@
 7. [Java获取本机MAC地址、IP地址](https://coderdream.github.io/201738#20173802)
 8. [WebDriver中页面滚动(scrolling)](http://blog.csdn.net/tanzhangwen/article/details/18733557)
 9. [Chart Samples -- Bar Chart](https://coderdream.github.io/chart/sample_0101)
+9. [Chart Samples -- Bar Chart 2](https://coderdream.github.io/chart/sample_0102)
 
 2017年第37周（2017/9/11~2017/9/17）
 ----------
