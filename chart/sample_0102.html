@@ -16,22 +16,25 @@
 
 <body>
 	<div>
-		<div id="container" style="width: 99%;">
-			<canvas id="canvas"></canvas>
+		<div id="container1" style="width: 99%;">
+			<canvas id="canvas1"></canvas>
 		</div>
-		<button id="randomizeData">Randomize Data</button>
-		<button id="addDataset">Add Dataset</button>
-		<button id="removeDataset">Remove Dataset</button>
-		<button id="addData">Add Data</button>
-		<button id="removeData">Remove Data</button>
-		<div id="container" style="width: 99%;">
-			<canvas id="canvas"></canvas>
+		<button id="randomizeData1">Randomize Data</button>
+		<button id="addDataset1">Add Dataset</button>
+		<button id="removeDataset1">Remove Dataset</button>
+		<button id="addData1">Add Data</button>
+		<button id="removeData1">Remove Data</button>
+		<br>
+		<hr>
+		<br>
+		<div id="container2" style="width: 99%;">
+			<canvas id="canvas2"></canvas>
 		</div>
-		<button id="randomizeData">Randomize Data</button>
-		<button id="addDataset">Add Dataset</button>
-		<button id="removeDataset">Remove Dataset</button>
-		<button id="addData">Add Data</button>
-		<button id="removeData">Remove Data</button>
+		<button id="randomizeData2">Randomize Data</button>
+		<button id="addDataset2">Add Dataset</button>
+		<button id="removeDataset2">Remove Dataset</button>
+		<button id="addData2">Add Data</button>
+		<button id="removeData2">Remove Data</button>
 	</div>
     <script>
         var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -71,8 +74,24 @@
         };
 
         window.onload = function() {
-            var ctx = document.getElementById("canvas").getContext("2d");
-            window.myBar = new Chart(ctx, {
+            var ctx1 = document.getElementById("canvas1").getContext("2d");
+            window.myBar1 = new Chart(ctx1, {
+                type: 'bar',
+                data: barChartData,
+                options: {
+                    responsive: true,
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Chart.js Bar Chart'
+                    }
+                }
+            });
+
+            var ctx2 = document.getElementById("canvas1").getContext("2d");
+            window.myBar2 = new Chart(ctx2, {
                 type: 'bar',
                 data: barChartData,
                 options: {
@@ -89,7 +108,7 @@
 
         };
 
-        document.getElementById('randomizeData').addEventListener('click', function() {
+        document.getElementById('randomizeData1').addEventListener('click', function() {
             var zero = Math.random() < 0.2 ? true : false;
             barChartData.datasets.forEach(function(dataset) {
                 dataset.data = dataset.data.map(function() {
@@ -97,11 +116,22 @@
                 });
 
             });
-            window.myBar.update();
+            window.myBar1.update();
+        });
+
+        document.getElementById('randomizeData2').addEventListener('click', function() {
+            var zero = Math.random() < 0.2 ? true : false;
+            barChartData.datasets.forEach(function(dataset) {
+                dataset.data = dataset.data.map(function() {
+                    return zero ? 0.0 : randomScalingFactor();
+                });
+
+            });
+            window.myBar2.update();
         });
 
         var colorNames = Object.keys(window.chartColors);
-        document.getElementById('addDataset').addEventListener('click', function() {
+        document.getElementById('addDataset1').addEventListener('click', function() {
             var colorName = colorNames[barChartData.datasets.length % colorNames.length];;
             var dsColor = window.chartColors[colorName];
             var newDataset = {
@@ -117,10 +147,29 @@
             }
 
             barChartData.datasets.push(newDataset);
-            window.myBar.update();
+            window.myBar1.update();
         });
 
-        document.getElementById('addData').addEventListener('click', function() {
+        document.getElementById('addDataset2').addEventListener('click', function() {
+            var colorName = colorNames[barChartData.datasets.length % colorNames.length];;
+            var dsColor = window.chartColors[colorName];
+            var newDataset = {
+                label: 'Dataset ' + barChartData.datasets.length,
+                backgroundColor: color(dsColor).alpha(0.5).rgbString(),
+                borderColor: dsColor,
+                borderWidth: 1,
+                data: []
+            };
+
+            for (var index = 0; index < barChartData.labels.length; ++index) {
+                newDataset.data.push(randomScalingFactor());
+            }
+
+            barChartData.datasets.push(newDataset);
+            window.myBar2.update();
+        });
+
+        document.getElementById('addData1').addEventListener('click', function() {
             if (barChartData.datasets.length > 0) {
                 var month = MONTHS[barChartData.labels.length % MONTHS.length];
                 barChartData.labels.push(month);
@@ -130,24 +179,56 @@
                     barChartData.datasets[index].data.push(randomScalingFactor());
                 }
 
-                window.myBar.update();
+                window.myBar1.update();
             }
         });
 
-        document.getElementById('removeDataset').addEventListener('click', function() {
-            barChartData.datasets.splice(0, 1);
-            window.myBar.update();
+        document.getElementById('addData2').addEventListener('click', function() {
+            if (barChartData.datasets.length > 0) {
+                var month = MONTHS[barChartData.labels.length % MONTHS.length];
+                barChartData.labels.push(month);
+
+                for (var index = 0; index < barChartData.datasets.length; ++index) {
+                    //window.myBar.addData(randomScalingFactor(), index);
+                    barChartData.datasets[index].data.push(randomScalingFactor());
+                }
+
+                window.myBar2.update();
+            }
         });
 
-        document.getElementById('removeData').addEventListener('click', function() {
+
+        document.getElementById('removeDataset1').addEventListener('click', function() {
+            barChartData.datasets.splice(0, 1);
+            window.myBar1.update();
+        });
+
+		document.getElementById('removeDataset2').addEventListener('click', function() {
+            barChartData.datasets.splice(0, 1);
+            window.myBar2.update();
+        });
+
+        document.getElementById('removeData1').addEventListener('click', function() {
             barChartData.labels.splice(-1, 1); // remove the label first
 
             barChartData.datasets.forEach(function(dataset, datasetIndex) {
                 dataset.data.pop();
             });
 
-            window.myBar.update();
+            window.myBar1.update();
         });
+
+        document.getElementById('removeData2').addEventListener('click', function() {
+            barChartData.labels.splice(-1, 1); // remove the label first
+
+            barChartData.datasets.forEach(function(dataset, datasetIndex) {
+                dataset.data.pop();
+            });
+
+            window.myBar2.update();
+        });
+
+
     </script>
 </body>
 
