@@ -14,8 +14,8 @@ $(function(){
 		   //each循环 使用$.each方法遍历返回的数据date
 		   var str = '';
 		   $.each(data.first, function(i, item) {
-				str = '<div>姓名:' + item.name + '性别：' + item.sex + '</div>';
-				document.write(str);
+				str += '<div>姓名:' + item.name + '性别：' + item.sex + '</div>';
+				//document.write(str);
 		   })
 		   var jsonTip2 = $("#jsonTip2");
 		   jsonTip2.html(str);
