@@ -5,7 +5,25 @@
 <title>jQuery ajax读取本地json文件</title> 
 <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script> 
 <script type="text/javascript"> 
-$(function(){ 	
+$(function(){ 
+	$("#btn").click(function(){ 
+		$.ajax({
+		   url: "js/test.json",//json文件位置
+		   type: "GET",//请求方式为get
+		   dataType: "json", //返回数据格式为json
+		   success: function(data) {//请求成功完成后要执行的方法 
+			   //each循环 使用$.each方法遍历返回的数据date
+			   var str = '';
+			   $.each(data.first, function(i, item) {
+					str = '<div>姓名:' + item.name + '性别：' + item.sex + '</div>';
+					document.write(str);
+			   })
+			   var jsonTip = $("#jsonTip");
+			   jsonTip.html(str);
+		   }
+		})
+	}) 
+	
 	$.ajax({
 	   url: "js/test.json",//json文件位置
 	   type: "GET",//请求方式为get
@@ -15,7 +33,6 @@ $(function(){
 		   var str = '';
 		   $.each(data.first, function(i, item) {
 				str += '<div>姓名:' + item.name + '性别：' + item.sex + '</div>';
-				//document.write(str);
 		   })
 		   var jsonTip2 = $("#jsonTip2");
 		   jsonTip2.html(str);
@@ -31,6 +48,11 @@ $(function(){
 <br>
 <hr>
 <br>
+<div> 
+<input type="button" value="获取数据" id="btn"/> 
+</div> 
+<div id="jsonTip"> 
+</div> 
 <br>
 <hr>
 
