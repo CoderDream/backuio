@@ -3,6 +3,7 @@
 2017年第39周（2017/9/25~2017/10/1）
 ----------
 1. [Tomcat管理页面403 Access Denied的解决方法](https://coderdream.github.io/201739#20173901)
+2. [MyBatis通过@调用Java类的静态代码和常量](https://coderdream.github.io/201739#20173902)
 
 
 2017年第38周（2017/9/18~2017/9/24）
