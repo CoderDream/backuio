@@ -4,6 +4,7 @@
 ----------
 1. [Tomcat管理页面403 Access Denied的解决方法](https://coderdream.github.io/201739#20173901)
 2. [MyBatis通过@调用Java类的静态代码和常量](https://coderdream.github.io/201739#20173902)
+3. [第五章 测试用例规划及TestNG的使用](https://coderdream.github.io/autotest/Chapter05)
 
 
 2017年第38周（2017/9/18~2017/9/24）
