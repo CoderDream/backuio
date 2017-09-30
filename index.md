@@ -7,6 +7,7 @@
 3. [Tomcat 配置shared目录](https://coderdream.github.io/201739#20173903)
 4. [Maven打war包不包含jar](https://coderdream.github.io/201739#20173904)
 5. [第五章 测试用例规划及TestNG的使用](https://coderdream.github.io/autotest/Chapter05)
+6. [查看sqlserver被锁的表以及如何解锁](https://coderdream.github.io/201739#20173905)
 
 
 2017年第38周（2017/9/18~2017/9/24）
