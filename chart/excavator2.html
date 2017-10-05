@@ -47,6 +47,7 @@
 			url : "json/workdays_count.json",//json文件位置
 			type : "GET",//请求方式为get
 			dataType : "json", //返回数据格式为json
+			async : false,
 			success : function(data) {//请求成功完成后要执行的方法 
 				//each循环 使用$.each方法遍历返回的数据date
 				//var str = '';
@@ -59,7 +60,7 @@
 				//console.log(str);
 				//var jsonTip2 = $("#jsonTip2");
 				//jsonTip2.html(str);
-				alert('workday_amounts: ' + workday_amounts);
+				//alert('workday_amounts: ' + workday_amounts);
 			}
 		});
 
@@ -87,7 +88,7 @@
 
         window.onload = function() {
             var ctx1 = document.getElementById("canvas1").getContext("2d");
-			alert('workday_amounts: ' + barChartData1);
+			//alert('workday_amounts: ' + barChartData1);
 			window.myBar = new Chart(ctx1, {
 				type : 'bar',
 				data : barChartData1,
