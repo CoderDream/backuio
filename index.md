@@ -1,5 +1,17 @@
 
 
+
+2017年第40周（2017/10/02~2017/10/08）
+----------
+1. [artTemplate-basic](https://coderdream.github.io/art/basic)
+2. [artTemplate-include](https://coderdream.github.io/art/include)
+3. [artTemplate-compile](https://coderdream.github.io/art/compile)
+4. [artTemplate-compile-error](https://coderdream.github.io/art/compile-error)
+5. [artTemplate-filter](https://coderdream.github.io/art/filter)
+6. [artTemplate-no-escape](https://coderdream.github.io/art/no-escape)
+7. [artTemplate-print](https://coderdream.github.io/art/print)
+8. [artTemplate-runtime-error](https://coderdream.github.io/art/runtime-error)
+
 2017年第39周（2017/9/25~2017/10/1）
 ----------
 1. [Tomcat管理页面403 Access Denied的解决方法](https://coderdream.github.io/201739#20173901)
