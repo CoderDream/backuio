@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>挖掘机运营状况</title>
+    <script src="js/Chart.bundle.js"></script>
+    <script src="js/utils.js"></script>
+    <style>
+    canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    </style>
+</head>
+
+<body>
+	<div>
+		<div id="container1" style="width: 99%;">
+			<canvas id="canvas1"></canvas>
+		</div>
+		<button id="randomizeData1">Randomize Data</button>
+		<button id="addDataset1">Add Dataset</button>
+		<button id="removeDataset1">Remove Dataset</button>
+		<button id="addData1">Add Data</button>
+		<button id="removeData1">Remove Data</button>
+		<br>
+		<hr>
+		<br>
+		<div id="container2" style="width: 99%;">
+			<canvas id="canvas2"></canvas>
+		</div>
+		<button id="randomizeData2">Randomize Data</button>
+		<button id="addDataset2">Add Dataset</button>
+		<button id="removeDataset2">Remove Dataset</button>
+		<button id="addData2">Add Data</button>
+		<button id="removeData2">Remove Data</button>
+	</div>
+    <script>
+        var color = Chart.helpers.color;
+		
+		var months = [ "2017-03", "2017-04", "2017-05", "2017-06", "2017-07",
+			"2017-08"];//, "2017-09", "2017-10", "2017-11", "2017-12" ];
+		var workday_amounts = [];// 大车
+		var amounts2 = ["31","30","31","30","31","31"];//,"30"];// 小车
+		$.ajax({
+			url : "json/workdays_count.json",//json文件位置
+			type : "GET",//请求方式为get
+			dataType : "json", //返回数据格式为json
+			success : function(data) {//请求成功完成后要执行的方法 
+				//each循环 使用$.each方法遍历返回的数据date
+				//var str = '';
+				$.each(data, function(key, value) {
+					// console.log(index + ":" + value);
+					var amounts = value;
+					workday_amounts.push(amounts);
+					//str += '<div>日期:' + key + ', 数量：' + value + '</div>';
+				})
+				//console.log(str);
+				//var jsonTip2 = $("#jsonTip2");
+				//jsonTip2.html(str);
+				alert('workday_amounts: ' + workday_amounts);
+			}
+		});
+
+		var barChartData1 = {
+			labels : months,
+			datasets : [
+					{
+						label : '工作天数',
+						backgroundColor : color(window.chartColors.yellow).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : workday_amounts
+					},
+					{
+						label : '自然日',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2
+					} ]
+		};
+		
+
+        window.onload = function() {
+            var ctx1 = document.getElementById("canvas1").getContext("2d");
+			window.myBar = new Chart(ctx1, {
+				type : 'bar',
+				data : barChartData1,
+				options : {
+					responsive : true,
+					legend : {
+						position : 'top',
+					},
+					title : {
+						display : true,
+						text : '营运数量统计-每月开工天数'
+					}
+				}
+			});
+
+        };
+
+        document.getElementById('randomizeData1').addEventListener('click', function() {
+            var zero = Math.random() < 0.2 ? true : false;
+            barChartData.datasets.forEach(function(dataset) {
+                dataset.data = dataset.data.map(function() {
+                    return zero ? 0.0 : randomScalingFactor();
+                });
+
+            });
+            window.myBar1.update();
+        });
+
+        document.getElementById('randomizeData2').addEventListener('click', function() {
+            var zero = Math.random() < 0.2 ? true : false;
+            barChartData.datasets.forEach(function(dataset) {
+                dataset.data = dataset.data.map(function() {
+                    return zero ? 0.0 : randomScalingFactor();
+                });
+
+            });
+            window.myBar2.update();
+        });
+
+        var colorNames = Object.keys(window.chartColors);
+        document.getElementById('addDataset1').addEventListener('click', function() {
+            var colorName = colorNames[barChartData.datasets.length % colorNames.length];;
+            var dsColor = window.chartColors[colorName];
+            var newDataset = {
+                label: 'Dataset ' + barChartData.datasets.length,
+                backgroundColor: color(dsColor).alpha(0.5).rgbString(),
+                borderColor: dsColor,
+                borderWidth: 1,
+                data: []
+            };
+
+            for (var index = 0; index < barChartData.labels.length; ++index) {
+                newDataset.data.push(randomScalingFactor());
+            }
+
+            barChartData.datasets.push(newDataset);
+            window.myBar1.update();
+        });
+
+        document.getElementById('addDataset2').addEventListener('click', function() {
+            var colorName = colorNames[barChartData.datasets.length % colorNames.length];;
+            var dsColor = window.chartColors[colorName];
+            var newDataset = {
+                label: 'Dataset ' + barChartData.datasets.length,
+                backgroundColor: color(dsColor).alpha(0.5).rgbString(),
+                borderColor: dsColor,
+                borderWidth: 1,
+                data: []
+            };
+
+            for (var index = 0; index < barChartData.labels.length; ++index) {
+                newDataset.data.push(randomScalingFactor());
+            }
+
+            barChartData.datasets.push(newDataset);
+            window.myBar2.update();
+        });
+
+        document.getElementById('addData1').addEventListener('click', function() {
+            if (barChartData.datasets.length > 0) {
+                var month = MONTHS[barChartData.labels.length % MONTHS.length];
+                barChartData.labels.push(month);
+
+                for (var index = 0; index < barChartData.datasets.length; ++index) {
+                    //window.myBar.addData(randomScalingFactor(), index);
+                    barChartData.datasets[index].data.push(randomScalingFactor());
+                }
+
+                window.myBar1.update();
+            }
+        });
+
+        document.getElementById('addData2').addEventListener('click', function() {
+            if (barChartData.datasets.length > 0) {
+                var month = MONTHS[barChartData.labels.length % MONTHS.length];
+                barChartData.labels.push(month);
+
+                for (var index = 0; index < barChartData.datasets.length; ++index) {
+                    //window.myBar.addData(randomScalingFactor(), index);
+                    barChartData.datasets[index].data.push(randomScalingFactor());
+                }
+
+                window.myBar2.update();
+            }
+        });
+
+
+        document.getElementById('removeDataset1').addEventListener('click', function() {
+            barChartData.datasets.splice(0, 1);
+            window.myBar1.update();
+        });
+
+		document.getElementById('removeDataset2').addEventListener('click', function() {
+            barChartData.datasets.splice(0, 1);
+            window.myBar2.update();
+        });
+
+        document.getElementById('removeData1').addEventListener('click', function() {
+            barChartData.labels.splice(-1, 1); // remove the label first
+
+            barChartData.datasets.forEach(function(dataset, datasetIndex) {
+                dataset.data.pop();
+            });
+
+            window.myBar1.update();
+        });
+
+        document.getElementById('removeData2').addEventListener('click', function() {
+            barChartData.labels.splice(-1, 1); // remove the label first
+
+            barChartData.datasets.forEach(function(dataset, datasetIndex) {
+                dataset.data.pop();
+            });
+
+            window.myBar2.update();
+        });
+
+
+    </script>
+</body>
+
+</html>
