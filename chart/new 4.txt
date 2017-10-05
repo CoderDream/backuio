@@ -1,0 +1,250 @@
+varweather_str={
+	city: '岳阳',
+	tqInfo: [{
+		ymd: '2012-06-01',
+		bWendu: '23℃',
+		yWendu: '20℃',
+		tianqi: '小雨~阴',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-02',
+		bWendu: '26℃',
+		yWendu: '22℃',
+		tianqi: '晴',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-03',
+		bWendu: '25℃',
+		yWendu: '20℃',
+		tianqi: '阵雨~小雨',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-04',
+		bWendu: '23℃',
+		yWendu: '19℃',
+		tianqi: '小雨',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-05',
+		bWendu: '26℃',
+		yWendu: '21℃',
+		tianqi: '多云~阵雨',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-06',
+		bWendu: '24℃',
+		yWendu: '22℃',
+		tianqi: '阴',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-07',
+		bWendu: '27℃',
+		yWendu: '23℃',
+		tianqi: '小雨~阵雨',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-08',
+		bWendu: '28℃',
+		yWendu: '23℃',
+		tianqi: '阴~阵雨',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-09',
+		bWendu: '29℃',
+		yWendu: '25℃',
+		tianqi: '多云~阵雨',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-10',
+		bWendu: '28℃',
+		yWendu: '24℃',
+		tianqi: '阵雨~中雨',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-11',
+		bWendu: '29℃',
+		yWendu: '24℃',
+		tianqi: '阴~多云',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-12',
+		bWendu: '31℃',
+		yWendu: '25℃',
+		tianqi: '晴',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-13',
+		bWendu: '33℃',
+		yWendu: '24℃',
+		tianqi: '晴',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-14',
+		bWendu: '30℃',
+		yWendu: '24℃',
+		tianqi: '多云',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-15',
+		bWendu: '31℃',
+		yWendu: '24℃',
+		tianqi: '多云',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-16',
+		bWendu: '31℃',
+		yWendu: '25℃',
+		tianqi: '多云',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-17',
+		bWendu: '32℃',
+		yWendu: '24℃',
+		tianqi: '多云',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-18',
+		bWendu: '32℃',
+		yWendu: '25℃',
+		tianqi: '晴',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-19',
+		bWendu: '32℃',
+		yWendu: '25℃',
+		tianqi: '多云~晴',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-20',
+		bWendu: '33℃',
+		yWendu: '25℃',
+		tianqi: '晴',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-21',
+		bWendu: '33℃',
+		yWendu: '26℃',
+		tianqi: '多云',
+		fengxiang: '北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-22',
+		bWendu: '32℃',
+		yWendu: '27℃',
+		tianqi: '晴~多云',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-23',
+		bWendu: '31℃',
+		yWendu: '25℃',
+		tianqi: '多云',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-24',
+		bWendu: '31℃',
+		yWendu: '25℃',
+		tianqi: '多云',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-25',
+		bWendu: '29℃',
+		yWendu: '25℃',
+		tianqi: '小到中雨~大到暴雨',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-26',
+		bWendu: '28℃',
+		yWendu: '24℃',
+		tianqi: '大到暴雨',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-27',
+		bWendu: '29℃',
+		yWendu: '25℃',
+		tianqi: '阵雨~中雨',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-28',
+		bWendu: '30℃',
+		yWendu: '24℃',
+		tianqi: '阵雨~阴',
+		fengxiang: '南风~北风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-29',
+		bWendu: '32℃',
+		yWendu: '25℃',
+		tianqi: '多云',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		ymd: '2012-06-30',
+		bWendu: '33℃',
+		yWendu: '27℃',
+		tianqi: '多云~晴',
+		fengxiang: '南风',
+		fengli: '微风'
+	},
+	{
+		
+	}],
+	maxWendu: '33（2012-06-21）',
+	minWendu: '19（2012-06-04）',
+	avgbWendu: '29',
+	avgyWendu: '24'
+};
