@@ -350,6 +350,384 @@
 						data : amounts2017034
 					}]
 		};
+		
+		var workdays201704 = [];//工作日
+		var amounts2017041 = [];// 大车
+		var amounts2017042 = [];// 小车
+		var amounts2017043 = [];// 台班
+		var amounts2017044 = [];// 收入
+		$.ajax({
+			url : "json/workday_amount_201704.json",//json文件位置
+			type : "GET",//请求方式为get
+			dataType : "json", //返回数据格式为json
+			async : false,
+			success : function(data) {//请求成功完成后要执行的方法 
+				//each循环 使用$.each方法遍历返回的数据date
+				//var str = '';
+				$.each(data, function(key, value) {
+					// console.log(index + ":" + value);
+					var workday = key;
+					workdays201704.push(workday);
+					var amounts = value;
+					amounts2017041.push(amounts.A);
+					amounts2017042.push(amounts.B);
+					amounts2017043.push(amounts.C);
+					amounts2017044.push(amounts.T);
+				});
+			}
+		});
+
+		var barChartData201704 = {
+			labels : workdays201704,
+			datasets : [
+					{
+						label : '大车',
+						backgroundColor : color(window.chartColors.red).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.red,
+						borderWidth : 1,
+						data : amounts2017041
+					},
+					{
+						label : '小车',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017042
+					},
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.yellow).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.yellow,
+						borderWidth : 1,
+						data : amounts2017043
+					} ,
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017044
+					}]
+		};
+		
+		var workdays201705 = [];//工作日
+		var amounts2017051 = [];// 大车
+		var amounts2017052 = [];// 小车
+		var amounts2017053 = [];// 台班
+		var amounts2017054 = [];// 收入
+		$.ajax({
+			url : "json/workday_amount_201705.json",//json文件位置
+			type : "GET",//请求方式为get
+			dataType : "json", //返回数据格式为json
+			async : false,
+			success : function(data) {//请求成功完成后要执行的方法 
+				//each循环 使用$.each方法遍历返回的数据date
+				//var str = '';
+				$.each(data, function(key, value) {
+					// console.log(index + ":" + value);
+					var workday = key;
+					workdays201705.push(workday);
+					var amounts = value;
+					amounts2017051.push(amounts.A);
+					amounts2017052.push(amounts.B);
+					amounts2017053.push(amounts.C);
+					amounts2017054.push(amounts.T);
+				});
+			}
+		});
+
+		var barChartData201705 = {
+			labels : workdays201705,
+			datasets : [
+					{
+						label : '大车',
+						backgroundColor : color(window.chartColors.red).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.red,
+						borderWidth : 1,
+						data : amounts2017051
+					},
+					{
+						label : '小车',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017052
+					},
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.yellow).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.yellow,
+						borderWidth : 1,
+						data : amounts2017053
+					} ,
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017054
+					}]
+		};
+		
+		var workdays201706 = [];//工作日
+		var amounts2017061 = [];// 大车
+		var amounts2017062 = [];// 小车
+		var amounts2017063 = [];// 台班
+		var amounts2017064 = [];// 收入
+		$.ajax({
+			url : "json/workday_amount_201706.json",//json文件位置
+			type : "GET",//请求方式为get
+			dataType : "json", //返回数据格式为json
+			async : false,
+			success : function(data) {//请求成功完成后要执行的方法 
+				//each循环 使用$.each方法遍历返回的数据date
+				//var str = '';
+				$.each(data, function(key, value) {
+					// console.log(index + ":" + value);
+					var workday = key;
+					workdays201706.push(workday);
+					var amounts = value;
+					amounts2017061.push(amounts.A);
+					amounts2017062.push(amounts.B);
+					amounts2017063.push(amounts.C);
+					amounts2017064.push(amounts.T);
+				});
+			}
+		});
+
+		var barChartData201706 = {
+			labels : workdays201706,
+			datasets : [
+					{
+						label : '大车',
+						backgroundColor : color(window.chartColors.red).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.red,
+						borderWidth : 1,
+						data : amounts2017061
+					},
+					{
+						label : '小车',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017062
+					},
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.yellow).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.yellow,
+						borderWidth : 1,
+						data : amounts2017063
+					} ,
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017064
+					}]
+		};
+		
+		var workdays201707 = [];//工作日
+		var amounts2017071 = [];// 大车
+		var amounts2017072 = [];// 小车
+		var amounts2017073 = [];// 台班
+		var amounts2017074 = [];// 收入
+		$.ajax({
+			url : "json/workday_amount_201707.json",//json文件位置
+			type : "GET",//请求方式为get
+			dataType : "json", //返回数据格式为json
+			async : false,
+			success : function(data) {//请求成功完成后要执行的方法 
+				//each循环 使用$.each方法遍历返回的数据date
+				//var str = '';
+				$.each(data, function(key, value) {
+					// console.log(index + ":" + value);
+					var workday = key;
+					workdays201707.push(workday);
+					var amounts = value;
+					amounts2017071.push(amounts.A);
+					amounts2017072.push(amounts.B);
+					amounts2017073.push(amounts.C);
+					amounts2017074.push(amounts.T);
+				});
+			}
+		});
+
+		var barChartData201707 = {
+			labels : workdays201707,
+			datasets : [
+					{
+						label : '大车',
+						backgroundColor : color(window.chartColors.red).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.red,
+						borderWidth : 1,
+						data : amounts2017071
+					},
+					{
+						label : '小车',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017072
+					},
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.yellow).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.yellow,
+						borderWidth : 1,
+						data : amounts2017073
+					} ,
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017074
+					}]
+		};
+		
+		var workdays201708 = [];//工作日
+		var amounts2017081 = [];// 大车
+		var amounts2017082 = [];// 小车
+		var amounts2017083 = [];// 台班
+		var amounts2017084 = [];// 收入
+		$.ajax({
+			url : "json/workday_amount_201708.json",//json文件位置
+			type : "GET",//请求方式为get
+			dataType : "json", //返回数据格式为json
+			async : false,
+			success : function(data) {//请求成功完成后要执行的方法 
+				//each循环 使用$.each方法遍历返回的数据date
+				//var str = '';
+				$.each(data, function(key, value) {
+					// console.log(index + ":" + value);
+					var workday = key;
+					workdays201708.push(workday);
+					var amounts = value;
+					amounts2017081.push(amounts.A);
+					amounts2017082.push(amounts.B);
+					amounts2017083.push(amounts.C);
+					amounts2017084.push(amounts.T);
+				});
+			}
+		});
+
+		var barChartData201708 = {
+			labels : workdays201708,
+			datasets : [
+					{
+						label : '大车',
+						backgroundColor : color(window.chartColors.red).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.red,
+						borderWidth : 1,
+						data : amounts2017081
+					},
+					{
+						label : '小车',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017082
+					},
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.yellow).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.yellow,
+						borderWidth : 1,
+						data : amounts2017083
+					} ,
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017084
+					}]
+		};
+		
+		var workdays201709 = [];//工作日
+		var amounts2017091 = [];// 大车
+		var amounts2017092 = [];// 小车
+		var amounts2017093 = [];// 台班
+		var amounts2017094 = [];// 收入
+		$.ajax({
+			url : "json/workday_amount_201709.json",//json文件位置
+			type : "GET",//请求方式为get
+			dataType : "json", //返回数据格式为json
+			async : false,
+			success : function(data) {//请求成功完成后要执行的方法 
+				//each循环 使用$.each方法遍历返回的数据date
+				//var str = '';
+				$.each(data, function(key, value) {
+					// console.log(index + ":" + value);
+					var workday = key;
+					workdays201709.push(workday);
+					var amounts = value;
+					amounts2017091.push(amounts.A);
+					amounts2017092.push(amounts.B);
+					amounts2017093.push(amounts.C);
+					amounts2017094.push(amounts.T);
+				});
+			}
+		});
+
+		var barChartData201709 = {
+			labels : workdays201709,
+			datasets : [
+					{
+						label : '大车',
+						backgroundColor : color(window.chartColors.red).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.red,
+						borderWidth : 1,
+						data : amounts2017091
+					},
+					{
+						label : '小车',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017092
+					},
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.yellow).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.yellow,
+						borderWidth : 1,
+						data : amounts2017093
+					} ,
+					{
+						label : '台班',
+						backgroundColor : color(window.chartColors.blue).alpha(
+								0.5).rgbString(),
+						borderColor : window.chartColors.blue,
+						borderWidth : 1,
+						data : amounts2017094
+					}]
+		};
 			
 		window.onload = function() {
 			
@@ -431,6 +809,102 @@
 					title : {
 						display : true,
 						text : '营运数量统计-201703'
+					}
+				}
+			});
+			
+			var ctx201704 = document.getElementById("canvas201704").getContext("2d");
+			window.myBar = new Chart(ctx201704, {
+				type : 'bar',
+				data : barChartData201704,
+				options : {
+					responsive : true,
+					legend : {
+						position : 'top',
+					},
+					title : {
+						display : true,
+						text : '营运数量统计-201704'
+					}
+				}
+			});
+			
+			var ctx201705 = document.getElementById("canvas201705").getContext("2d");
+			window.myBar = new Chart(ctx201705, {
+				type : 'bar',
+				data : barChartData201705,
+				options : {
+					responsive : true,
+					legend : {
+						position : 'top',
+					},
+					title : {
+						display : true,
+						text : '营运数量统计-201705'
+					}
+				}
+			});
+			
+			var ctx201706 = document.getElementById("canvas201706").getContext("2d");
+			window.myBar = new Chart(ctx201706, {
+				type : 'bar',
+				data : barChartData201706,
+				options : {
+					responsive : true,
+					legend : {
+						position : 'top',
+					},
+					title : {
+						display : true,
+						text : '营运数量统计-201706'
+					}
+				}
+			});
+			
+			var ctx201707 = document.getElementById("canvas201707").getContext("2d");
+			window.myBar = new Chart(ctx201707, {
+				type : 'bar',
+				data : barChartData201707,
+				options : {
+					responsive : true,
+					legend : {
+						position : 'top',
+					},
+					title : {
+						display : true,
+						text : '营运数量统计-201707'
+					}
+				}
+			});
+			
+			var ctx201708 = document.getElementById("canvas201708").getContext("2d");
+			window.myBar = new Chart(ctx201708, {
+				type : 'bar',
+				data : barChartData201708,
+				options : {
+					responsive : true,
+					legend : {
+						position : 'top',
+					},
+					title : {
+						display : true,
+						text : '营运数量统计-201708'
+					}
+				}
+			});
+			
+			var ctx201709 = document.getElementById("canvas201709").getContext("2d");
+			window.myBar = new Chart(ctx201709, {
+				type : 'bar',
+				data : barChartData201709,
+				options : {
+					responsive : true,
+					legend : {
+						position : 'top',
+					},
+					title : {
+						display : true,
+						text : '营运数量统计-201709'
 					}
 				}
 			});
