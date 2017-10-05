@@ -11,6 +11,7 @@
 6. [artTemplate-no-escape](https://coderdream.github.io/art/no-escape)
 7. [artTemplate-print](https://coderdream.github.io/art/print)
 8. [artTemplate-runtime-error](https://coderdream.github.io/art/runtime-error)
+9. [挖掘机运营状况](https://coderdream.github.io/chart/excavator)
 
 2017年第39周（2017/9/25~2017/10/1）
 ----------
