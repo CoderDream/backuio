@@ -79,29 +79,33 @@
 				//var jsonTip2 = $("#jsonTip2");
 				//jsonTip2.html(str);
 				// alert('workday_amounts: ' + workday_amounts);
+				
+				
+				var barChartData1 = {
+				labels : months,
+				datasets : [
+						{
+							label : '工作天数',
+							backgroundColor : color(window.chartColors.yellow).alpha(
+									0.5).rgbString(),
+							borderColor : window.chartColors.blue,
+							borderWidth : 1,
+							data : workday_amounts
+						},
+						{
+							label : '自然日',
+							backgroundColor : color(window.chartColors.blue).alpha(
+									0.5).rgbString(),
+							borderColor : window.chartColors.blue,
+							borderWidth : 1,
+							data : amounts2
+						} ]
+			};
+				
 			}
 		});
 
-		var barChartData1 = {
-			labels : months,
-			datasets : [
-					{
-						label : '工作天数',
-						backgroundColor : color(window.chartColors.yellow).alpha(
-								0.5).rgbString(),
-						borderColor : window.chartColors.blue,
-						borderWidth : 1,
-						data : workday_amounts
-					},
-					{
-						label : '自然日',
-						backgroundColor : color(window.chartColors.blue).alpha(
-								0.5).rgbString(),
-						borderColor : window.chartColors.blue,
-						borderWidth : 1,
-						data : amounts2
-					} ]
-		};
+		
 		
 		var workdays21 = [];//工作日
 		var amounts211 = [];// 大车
