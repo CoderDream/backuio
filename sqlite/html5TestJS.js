@@ -55,7 +55,7 @@ function showData(row){
 function showAllData(){
 	
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', '/path/to/database.sqlite', true);
+	xhr.open('GET', '/sqlite/testDB.db', true);
 	xhr.responseType = 'arraybuffer';
 
 	xhr.onload = function(e) {
