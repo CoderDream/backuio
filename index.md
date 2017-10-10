@@ -1,6 +1,19 @@
 
 
 
+2017年第41周（2017/10/09~2017/10/15）
+----------
+1. [sql.js-SQLite compiled to javascript](https://github.com/kripken/sql.js)
+2. [JS操作SQLite](https://coderdream.github.io/201741#20174101)
+3. [artTemplate-compile](https://coderdream.github.io/art/compile)
+4. [artTemplate-compile-error](https://coderdream.github.io/art/compile-error)
+5. [artTemplate-filter](https://coderdream.github.io/art/filter)
+6. [artTemplate-no-escape](https://coderdream.github.io/art/no-escape)
+7. [artTemplate-print](https://coderdream.github.io/art/print)
+8. [artTemplate-runtime-error](https://coderdream.github.io/art/runtime-error)
+9. [挖掘机运营状况](https://coderdream.github.io/chart/excavator)
+
+
 2017年第40周（2017/10/02~2017/10/08）
 ----------
 1. [artTemplate-basic](https://coderdream.github.io/art/basic)
