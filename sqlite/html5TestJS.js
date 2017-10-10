@@ -53,15 +53,28 @@ function showData(row){
 
 //显示当前本地数据库中所有的数据信息
 function showAllData(){
-    db.transaction(function(tx){
+	
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', '/path/to/database.sqlite', true);
+	xhr.responseType = 'arraybuffer';
+
+	xhr.onload = function(e) {
+	  var uInt8Array = new Uint8Array(this.response);
+	  var db = new SQL.Database(uInt8Array);
+	  var contents = db.exec("SELECT * FROM my_table");
+	  // contents is now [{columns:['col1','col2',...], values:[[first row], [second row], ...]}]
+	};
+	xhr.send();
+	
+    //db.transaction(function(tx){
         //tx.executeSql("create table if not exists MsgData(name text,message text,time integer)",[]);
-        tx.executeSql("SELECT * FROM COMPANY",[],function(tx,rs){
+    //    tx.executeSql("SELECT * FROM COMPANY",[],function(tx,rs){
             //removeAllData();
-            for(var i=0;i<rs.rows.length;i++){
-                showData(rs.rows.item(i));
-            }
-        });
-    })
+    //        for(var i=0;i<rs.rows.length;i++){
+    //            showData(rs.rows.item(i));
+    //        }
+    //    });
+    //})
 }
 
 //向本地数据库中添加数据
