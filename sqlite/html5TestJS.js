@@ -62,6 +62,9 @@ function showAllData(){
 	  var uInt8Array = new Uint8Array(this.response);
 	  var db = new SQL.Database(uInt8Array);
 	  var contents = db.exec("SELECT * FROM COMPANY");
+	  console.log(contents);
+	  alert('contents: ' + contents);
+
 	  // contents is now [{columns:['col1','col2',...], values:[[first row], [second row], ...]}]
 	};
 	xhr.send();
