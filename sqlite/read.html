@@ -4,12 +4,18 @@
         <meta charset="UTF-8">
         <title></title>
         <script type="text/javascript" src="sql.js"></script>
+        <script type="text/javascript" src="jquery-1.12.0.js"></script>
     </head>
     <body>
-        <input type="file"  id="dbFileEle"/>
+		<input type="text" id="tableName" />
+        <input type="file" id="dbFileEle"/>
     </body>
-    <script>
-         
+    <script>     
+		
+        var tableName = document.getElementById('tableName').val;
+		if(null== tableName || '' == tableName) {
+			tableName = 'COMPANY';
+		}
         var dbFileElm = document.getElementById('dbFileEle');
         dbFileElm.onchange = function() {
             var f = dbFileElm.files[0];
@@ -18,8 +24,48 @@
                 var Uints = new Uint8Array(r.result);
                 db = new SQL.Database(Uints);
                 //console.log(db)
-                var c = db.exec("SELECT * FROM COMPANY");
-                document.write(c)
+                var c = db.exec("SELECT * FROM " + tableName);
+				var result = '';
+				var columns = c[0].columns
+				var values = c[0].values
+				console.info("columns: " + columns);
+				console.info("values: " + values);
+				console.info("columns length: " + columns.length);
+				console.info("values length: " + values.length);
+				
+				var columns_length = columns.length;
+				var values_length = values.length;
+				
+				for(var i = 0; i < values_length; i++ ){
+					for(var j = 0; j < columns_length; j++ ) {
+						console.info(columns[j] + ':' + values[i][j]);
+						result += columns[j] + ':' + values[i][j] + '&nbsp;&nbsp;&nbsp;&nbsp;';
+					}
+					result += '<br>';
+				}
+				
+				$.each(c, function(key, value) {
+					console.log(key + ":" + value);
+					//alert(key + ":" + value);
+					//alert(value.columns);
+					//alert(value.values);
+					$.each(value.values, function(key2, value2) {					
+						//alert(key2 + ":" + value2);
+						console.info(key2 + ":" + value2);
+					});
+					//var amounts = value;
+					//workday_amounts.push(amounts);
+					//str += '<div>日期:' + key + ', 数量：' + value + '</div>';
+				});
+				
+				//alert(c);
+				//alert(c.type);
+				//var PowerData = JSON.parse(c);
+				
+				//alert(PowerData.columns);
+				//alert(PowerData.values);
+				
+                document.write(result)
             }
             r.readAsArrayBuffer(f);
         }
