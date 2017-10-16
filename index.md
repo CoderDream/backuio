@@ -1,6 +1,11 @@
 
 
 
+2017年第41周（2017/10/16~2017/10/22）
+----------
+1. [JavaScript判断是否为整数类型方式](https://coderdream.github.io/201742#20174201)
+
+
 2017年第41周（2017/10/09~2017/10/15）
 ----------
 1. [sql.js-SQLite compiled to javascript](https://github.com/kripken/sql.js)
