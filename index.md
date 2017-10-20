@@ -5,6 +5,7 @@
 ----------
 1. [JavaScript判断是否为整数类型方式](https://coderdream.github.io/201742#20174201)
 2. [python+Eclipse+pydev环境搭建](http://www.cnblogs.com/Bonker/p/3584707.html)
+3. [现成的股票数据抓取工具啦，而且是免费、开源， ：TuShare](http://tushare.org/)
 
 
 2017年第41周（2017/10/09~2017/10/15）
