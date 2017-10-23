@@ -1,6 +1,14 @@
 
 
 
+2017年第43周（2017/10/23~2017/10/29）
+----------
+1. [Pyalgotrade-cn](https://github.com/Yam-cn/pyalgotrade-cn)
+2. [用 Python 实现你的量化交易策略](https://zhuanlan.zhihu.com/p/21624000?refer=crossin)
+3. [用 Python 写了个简单的股票量化交易框架](http://blog.csdn.net/junbujianwpl/article/details/52038688)
+4. [python做量化交易干货分享](http://www.cnblogs.com/dhcn/p/7121435.html)
+
+
 2017年第42周（2017/10/16~2017/10/22）
 ----------
 1. [JavaScript判断是否为整数类型方式](https://coderdream.github.io/201742#20174201)
