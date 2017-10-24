@@ -7,6 +7,12 @@
 2. [用 Python 实现你的量化交易策略](https://zhuanlan.zhihu.com/p/21624000?refer=crossin)
 3. [用 Python 写了个简单的股票量化交易框架](http://blog.csdn.net/junbujianwpl/article/details/52038688)
 4. [python做量化交易干货分享](http://www.cnblogs.com/dhcn/p/7121435.html)
+5. [Python编程的例子----股票数据接口](http://blog.csdn.net/jike080401/article/details/50510609)
+6. [【原】十分钟搞定pandas](http://www.cnblogs.com/chaosimple/p/4153083.html)
+7. [30天学会量化交易模型 Day01](http://30daydo.com/article/11)
+8. [发现使用python＋tushare做量化交易 其实不是很难](http://blog.csdn.net/yagamil/article/details/51440285)
+9. [编程小白如何结合量化实例学习python量化建模？](https://www.zhihu.com/question/40210709)
+10. [用Python浅析股票数据](http://python.jobbole.com/87733/)
 
 
 2017年第42周（2017/10/16~2017/10/22）
