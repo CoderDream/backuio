@@ -13,6 +13,14 @@
 8. [发现使用python＋tushare做量化交易 其实不是很难](http://blog.csdn.net/yagamil/article/details/51440285)
 9. [编程小白如何结合量化实例学习python量化建模？](https://www.zhihu.com/question/40210709)
 10. [用Python浅析股票数据](http://python.jobbole.com/87733/)
+11. [ 一个用Python编写的股票数据（沪深）爬虫和选股策略测试框架](http://blog.csdn.net/pangjiuzala/article/details/50410728)
+12. [Sina股票实时数据接口](http://blog.csdn.net/djun100/article/details/25748419)
+13. [腾迅股票数据接口 http/javascript](http://blog.csdn.net/ustbhacker/article/details/8365756)
+14. [dHydra 主要针对多数据源多策略实时计算的量化分析开发框架。提供新浪Level2等数据获取](https://github.com/Emptyset110/dHydra)
+15. [实时股票数据接口](http://www.cnblogs.com/luluping/archive/2010/11/15/1877817.html)
+16. [自学python之爬虫3股票数据爬虫](http://www.cnblogs.com/wyfighting/p/7497985.html)
+17. [Python3.5 queue模块详解](http://www.cnblogs.com/CongZhang/p/5274486.html)
+18. [终端实时获取股票价格(GitHub)](https://github.com/felixglow/Stock)
 
 
 2017年第42周（2017/10/16~2017/10/22）
