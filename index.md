@@ -21,6 +21,8 @@
 16. [自学python之爬虫3股票数据爬虫](http://www.cnblogs.com/wyfighting/p/7497985.html)
 17. [Python3.5 queue模块详解](http://www.cnblogs.com/CongZhang/p/5274486.html)
 18. [终端实时获取股票价格(GitHub)](https://github.com/felixglow/Stock)
+19. [雪球股票讨论度与价格走势的关系](https://github.com/garydai/stock)
+20. [如何下载股票历史数据？](https://www.zhihu.com/question/22145919)
 
 
 2017年第42周（2017/10/16~2017/10/22）
