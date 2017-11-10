@@ -4,6 +4,7 @@
 2017年第45周（2017/11/06~2017/11/12）
 ----------
 1. [weui实例-button](https://coderdream.github.io/weui/01_button)
+2. [weui实例-form](https://coderdream.github.io/weui/02_form)
 
 
 2017年第44周（2017/10/30~2017/11/05）
