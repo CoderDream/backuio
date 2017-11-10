@@ -1,6 +1,16 @@
 
 
 
+2017年第45周（2017/11/06~2017/11/12）
+----------
+1. [weui实例-button](https://coderdream.github.io/weui/01_button)
+
+
+2017年第44周（2017/10/30~2017/11/05）
+----------
+1. [weui实例](https://coderdream.github.io/weui/index)
+
+
 2017年第43周（2017/10/23~2017/10/29）
 ----------
 1. [Pyalgotrade-cn](https://github.com/Yam-cn/pyalgotrade-cn)
