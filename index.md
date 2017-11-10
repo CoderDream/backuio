@@ -5,6 +5,9 @@
 ----------
 1. [weui实例-button](https://coderdream.github.io/weui/01_button)
 2. [weui实例-form](https://coderdream.github.io/weui/02_form)
+3. [jquery-weui实例](https://coderdream.github.io/jquery_weui/index)
+
+
 
 
 2017年第44周（2017/10/30~2017/11/05）
