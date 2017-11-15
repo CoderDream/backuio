@@ -1,13 +1,18 @@
 
 
+2017年第46周（2017/11/13~2017/11/19）
+----------
+1. [JS组件系列——Form表单验证神器： BootstrapValidator](https://www.cnblogs.com/landeanfen/p/5035608.html)
+2. [基于jquery，bootstrap数据验证插件bootstrapValidator 教程](https://www.cnblogs.com/v-weiwang/p/4834672.html)
+3. [bootstrapValidator.js 做表单验证](https://www.cnblogs.com/nele/p/5493414.html)
+4. [SpringMVC访问不到默认页的问题](https://coderdream.github.io/201746#20174601)
+
 
 2017年第45周（2017/11/06~2017/11/12）
 ----------
 1. [weui实例-button](https://coderdream.github.io/weui/01_button)
 2. [weui实例-form](https://coderdream.github.io/weui/02_form)
 3. [jquery-weui实例](https://coderdream.github.io/jquery_weui/index)
-
-
 
 
 2017年第44周（2017/10/30~2017/11/05）
