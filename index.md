@@ -6,6 +6,7 @@
 2. [基于jquery，bootstrap数据验证插件bootstrapValidator 教程](https://www.cnblogs.com/v-weiwang/p/4834672.html)
 3. [bootstrapValidator.js 做表单验证](https://www.cnblogs.com/nele/p/5493414.html)
 4. [SpringMVC访问不到默认页的问题](https://coderdream.github.io/201746#20174601)
+5. [将外部jar打入本地maven仓库](https://coderdream.github.io/201746#20174602)
 
 
 2017年第45周（2017/11/06~2017/11/12）
