@@ -1,5 +1,13 @@
 
 
+
+2017年第47周（2017/11/13~2017/11/19）
+----------
+1. [人力看板（高级查询）](https://coderdream.github.io/201747#20174701)
+
+
+
+
 2017年第46周（2017/11/13~2017/11/19）
 ----------
 1. [JS组件系列——Form表单验证神器： BootstrapValidator](https://www.cnblogs.com/landeanfen/p/5035608.html)
@@ -8,6 +16,7 @@
 4. [SpringMVC访问不到默认页的问题](https://coderdream.github.io/201746#20174601)
 5. [将外部jar打入本地maven仓库](https://coderdream.github.io/201746#20174602)
 6. [maven项目使用mybatis-generator自动生成代码](https://coderdream.github.io/201746#20174603)
+7. [spring aop 实现用户操作日志记录功能(转）【本地实现为SystemLogAspect】](https://www.cnblogs.com/gjkbendan/p/6497040.html)
 
 
 2017年第45周（2017/11/06~2017/11/12）
