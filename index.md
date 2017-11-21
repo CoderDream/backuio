@@ -5,8 +5,9 @@
 ----------
 1. [人力看板（高级查询）](https://coderdream.github.io/201747#20174701)
 2. [任务看板（高级查询）](https://coderdream.github.io/201747#20174702)
-
-
+3. [JavaScript获取当前根目录](https://coderdream.github.io/201747#20174703)
+3. [看懂SqlServer查询计划](https://www.cnblogs.com/fish-li/archive/2011/06/06/2073626.html)
+4. [看懂SqlServer查询计划-数据库文件](http://files.cnblogs.com/files/fish-li/MyNorthwind.7z)
 
 
 2017年第46周（2017/11/13~2017/11/19）
