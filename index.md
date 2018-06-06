@@ -3,6 +3,7 @@
 ----------
 1. [SQL Server查询数据的所有表名和行数](https://coderdream.github.io/201823#20182301)
 2. [SQL Server新增和删除约束](https://coderdream.github.io/201823#20182302)
+3. [用Enterprise Architect从源码自动生成类图（附图+工具）](https://blog.csdn.net/whhgarsky/article/details/70164180)
 
 
 2017年第47周（2017/11/13~2017/11/19）
