@@ -1,10 +1,17 @@
 
+
+2018年第28周（2018/07/09~2018/07/15）
+----------
+1. [Git 忽略提交 .gitignore](https://www.cnblogs.com/youyoui/p/8337147.html)
+2. [selenium 3.0 键盘事件 +强制结束chromedriver进程代码](http://www.mamicode.com/info-detail-1833843.html) 
+
 2018年第23周（2018/06/04~2018/06/10）
 ----------
 1. [SQL Server查询数据的所有表名和行数](https://coderdream.github.io/201823#20182301)
 2. [SQL Server新增和删除约束](https://coderdream.github.io/201823#20182302)
 3. [用Enterprise Architect从源码自动生成类图（附图+工具）](https://blog.csdn.net/whhgarsky/article/details/70164180)
-
+4. [Enterprise Architect 数据库逆向工程（导入已经存在的数据表结构）](https://blog.csdn.net/u010156063/article/details/76199459)
+5. [UML造型——使用EA时序图工具的开发实践和经验](https://www.cnblogs.com/blfshiye/p/4747252.html)
 
 2017年第47周（2017/11/13~2017/11/19）
 ----------
@@ -13,7 +20,6 @@
 3. [JavaScript获取当前根目录](https://coderdream.github.io/201747#20174703)
 3. [看懂SqlServer查询计划](https://www.cnblogs.com/fish-li/archive/2011/06/06/2073626.html)
 4. [看懂SqlServer查询计划-数据库文件](http://files.cnblogs.com/files/fish-li/MyNorthwind.7z)
-
 
 2017年第46周（2017/11/13~2017/11/19）
 ----------
@@ -25,18 +31,15 @@
 6. [maven项目使用mybatis-generator自动生成代码](https://coderdream.github.io/201746#20174603)
 7. [spring aop 实现用户操作日志记录功能(转）【本地实现为SystemLogAspect】](https://www.cnblogs.com/gjkbendan/p/6497040.html)
 
-
 2017年第45周（2017/11/06~2017/11/12）
 ----------
 1. [weui实例-button](https://coderdream.github.io/weui/01_button)
 2. [weui实例-form](https://coderdream.github.io/weui/02_form)
 3. [jquery-weui实例](https://coderdream.github.io/jquery_weui/index)
 
-
 2017年第44周（2017/10/30~2017/11/05）
 ----------
 1. [weui实例](https://coderdream.github.io/weui/index)
-
 
 2017年第43周（2017/10/23~2017/10/29）
 ----------
