@@ -2,7 +2,8 @@
 
 2018年第30周（2018/07/23~2018/07/29）
 ----------
-1. [Docker 经典实例<](https://coderdream.github.io/docker-cookbook#20180727)
+1. [Docker 经典实例](https://coderdream.github.io/docker-cookbook#20180727)
+2. [CentOS 7 安装Sinopia](https://coderdream.github.io/centos-sinopia#20180727)
 
 2018年第28周（2018/07/09~2018/07/15）
 ----------
