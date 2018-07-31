@@ -1,5 +1,16 @@
 
 
+2018年第31周（2018/07/30~2018/08/05）
+----------
+1. [如何在CentOS 7上安装Vagrant](https://www.howtoing.com/how-to-install-vagrant-on-centos-7 )
+2. [Vagrant入门](https://www.cnblogs.com/davenkin/p/vagrant-virtualbox.html)
+3. [Vagrant box国内镜像及本地安装教程](https://c4ys.com/archives/1230)
+4. [CentOS7.2部署FTP](https://blog.csdn.net/xiaofeiaiai/article/details/55048812)
+5. [用 vagrant 快速部署 docker 虚拟机集群](https://blog.csdn.net/pmlpml/article/details/53925542)
+6. [Docker个人学习总结](https://www.cnblogs.com/I-will-be-different/p/4353597.html)
+7. [Docker学习笔记](https://www.cnblogs.com/52fhy/p/5638571.html)
+8. [Vagrant入门](https://www.cnblogs.com/davenkin/p/vagrant-virtualbox.html)
+
 2018年第30周（2018/07/23~2018/07/29）
 ----------
 1. [Docker 经典实例](https://coderdream.github.io/docker-cookbook#20180727)
