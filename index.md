@@ -10,6 +10,9 @@
 6. [Docker个人学习总结](https://www.cnblogs.com/I-will-be-different/p/4353597.html)
 7. [Docker学习笔记](https://www.cnblogs.com/52fhy/p/5638571.html)
 8. [Vagrant入门](https://www.cnblogs.com/davenkin/p/vagrant-virtualbox.html)
+9. [CentOS7 ab压力测试安装与解释](https://blog.csdn.net/u011415782/article/details/78501799)
+10. [Markdown 编辑器语法指南](https://segmentfault.com/markdown)
+11. [Node.js学习之网络爬虫（使用cheerio抓取网页数据）](https://blog.csdn.net/u012187452/article/details/73478028)
 
 2018年第30周（2018/07/23~2018/07/29）
 ----------
