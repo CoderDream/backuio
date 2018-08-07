@@ -1,3 +1,7 @@
+2018年第32周（2018/08/06~2018/08/12）
+----------
+1. [使用WebStorm/IDEA上传本地项目到GitHub](https://blog.csdn.net/dkbnull/article/details/61414350)
+2. [代码审查工具 StyleCop 的探索](http://www.cnblogs.com/limark/p/5200239.html)
 
 
 2018年第31周（2018/07/30~2018/08/05）
@@ -13,6 +17,8 @@
 9. [CentOS7 ab压力测试安装与解释](https://blog.csdn.net/u011415782/article/details/78501799)
 10. [Markdown 编辑器语法指南](https://segmentfault.com/markdown)
 11. [Node.js学习之网络爬虫（使用cheerio抓取网页数据）](https://blog.csdn.net/u012187452/article/details/73478028)
+12. [通读cheerio API](https://cnodejs.org/topic/5203a71844e76d216a727d2e)
+13. [NodeJS爬虫入门](http://www.cnblogs.com/mingjiatang/archive/2017/12/13/8034953.html)
 
 2018年第30周（2018/07/23~2018/07/29）
 ----------
