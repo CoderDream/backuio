@@ -2,8 +2,7 @@
 
 
 参考：
-1. [使用Sinopia搭建私有的npm仓库](https://segmentfault.com/a/1190000005790827)
-2. 
+1. [使用Sinopia搭建私有的npm仓库](https://segmentfault.com/a/1190000005790827)2. 
 
 
 ```shell
@@ -11,9 +10,15 @@ npm install -g sinopia
 ```
 当前用户下执行sinopia , 在~/sinopia/文件夹下就是配置信息及缓存包存放地
 
+```shell
+[root@localhost ~]# sinopia
+Sinopia doesn't need superuser privileges. Don't run it under root.
+ warn  --- config file  - /root/.config/sinopia/config.yaml
+ warn  --- http address - http://localhost:4873/
+```
+
 修改 /root/.config/sinopia/config.yaml
  
-
 ```shell
 uplinks:
 	npmjs:
@@ -151,68 +156,6 @@ npm config rm https-proxy
 然后使用npm install -g cnpm --registry=https://registry.npm.taobao.org安装淘宝的cnpm
 
 然后就可以使用cnpm命令了
-
-
-----------
-
-```shell
-
-```
-
-
-
-```shell
-
-```
-
-```shell
-
-```
-
-
-
-```shell
-
-```
-
-```shell
-
-```
-
-
-
-```shell
-
-```
-
-```shell
-
-```
-
-
-
-```shell
-
-```
-
-```shell
-
-```
-
-
-
-```shell
-
-```
-
-```shell
-
-```
-
-
-
-
-
 
 
 

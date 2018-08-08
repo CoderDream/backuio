@@ -2,6 +2,18 @@
 ----------
 1. [使用WebStorm/IDEA上传本地项目到GitHub](https://blog.csdn.net/dkbnull/article/details/61414350)
 2. [代码审查工具 StyleCop 的探索](http://www.cnblogs.com/limark/p/5200239.html)
+3. [js之规范代码写法](https://www.cnblogs.com/mxh1099/p/5332133.html)
+```
+for(var key in obj){
+	if(!obj.hasOwnProperty(key)) continue;
+```
+4. [WebStorm 打开Node.js的代码提示功能](https://blog.csdn.net/cc_fys/article/details/78281085)
+5. [用webstorm写jQuery代码提示有警告怎么处理？警告代码如下。麻烦大神指教](https://www.oschina.net/question/2855414_2189024)
+6. [JQuery警告：Duplicated jQuery selector【divs = $( "div" );】](https://blog.csdn.net/baidu_30809315/article/details/78548152)
+7. [代码审查工具StyleCop之一：介绍和使用]](https://www.cnblogs.com/shuaijie/articles/5033309.html)
+8. [StyleCop学习笔记——自定义规则](https://blog.csdn.net/gwblue/article/details/25003031)
+9. [StyleCop学习笔记——默认的规则](https://www.cnblogs.com/chen110xi/p/5534994.html)
+
 
 
 2018年第31周（2018/07/30~2018/08/05）
