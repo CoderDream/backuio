@@ -13,7 +13,7 @@ for(var key in obj){
 7. [代码审查工具StyleCop之一：介绍和使用]](https://www.cnblogs.com/shuaijie/articles/5033309.html)
 8. [StyleCop学习笔记——自定义规则](https://blog.csdn.net/gwblue/article/details/25003031)
 9. [StyleCop学习笔记——默认的规则](https://www.cnblogs.com/chen110xi/p/5534994.html)
-
+10. [VMWare怎样隐藏到托盘](https://coderdream.github.io/201831#20183102)
 
 
 2018年第31周（2018/07/30~2018/08/05）
