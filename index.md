@@ -10,10 +10,12 @@ for(var key in obj){
 4. [WebStorm 打开Node.js的代码提示功能](https://blog.csdn.net/cc_fys/article/details/78281085)
 5. [用webstorm写jQuery代码提示有警告怎么处理？警告代码如下。麻烦大神指教](https://www.oschina.net/question/2855414_2189024)
 6. [JQuery警告：Duplicated jQuery selector【divs = $( "div" );】](https://blog.csdn.net/baidu_30809315/article/details/78548152)
-7. [代码审查工具StyleCop之一：介绍和使用]](https://www.cnblogs.com/shuaijie/articles/5033309.html)
+7. [代码审查工具StyleCop之一：介绍和使用](https://www.cnblogs.com/shuaijie/articles/5033309.html)
 8. [StyleCop学习笔记——自定义规则](https://blog.csdn.net/gwblue/article/details/25003031)
 9. [StyleCop学习笔记——默认的规则](https://www.cnblogs.com/chen110xi/p/5534994.html)
 10. [VMWare怎样隐藏到托盘](https://coderdream.github.io/201831#20183102)
+11. [MarkDown支持高亮的语言](https://blog.csdn.net/u012102104/article/details/78950290)
+12. [自定义表单--样例](http://www.bootcss.com/p/layoutit/)
 
 
 2018年第31周（2018/07/30~2018/08/05）
