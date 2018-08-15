@@ -1,3 +1,14 @@
+2018年第33周（2018/08/13~2018/08/19）
+----------
+1. [centos6.5+postgresql10环境搭建](https://blog.csdn.net/mate_ge/article/details/78841351) 
+2. [CentOS7下安装并简单设置PostgreSQL笔记](https://www.cnblogs.com/think8848/p/5877076.html)
+3. [CentOS下Redis的安装](https://www.cnblogs.com/renzhicai/p/7773080.html)
+4. [Redis可视化工具Redis Desktop Manager使用](https://www.cnblogs.com/aimu/p/7047671.html)
+5. [Redis 教程](http://www.runoob.com/redis/redis-tutorial.html)
+6. [在Node.js中使用TCP套接字编程](https://cnodejs.org/topic/4fb1c1fd1975fe1e1310490b)
+7. [学习 NodeJS 第八天：Socket 通讯](https://blog.csdn.net/zhangxin09/article/details/12844975)
+8. [Node游戏服务器源代码（TCP通讯，mongodb，文件读写，数据加密，子父进程通讯）开心连三国](https://github.com/xyfcode/zspeed)
+
 2018年第32周（2018/08/06~2018/08/12）
 ----------
 1. [使用WebStorm/IDEA上传本地项目到GitHub](https://blog.csdn.net/dkbnull/article/details/61414350)
@@ -16,6 +27,11 @@ for(var key in obj){
 10. [VMWare怎样隐藏到托盘](https://coderdream.github.io/201831#20183102)
 11. [MarkDown支持高亮的语言](https://blog.csdn.net/u012102104/article/details/78950290)
 12. [自定义表单--样例](http://www.bootcss.com/p/layoutit/)
+13. [自定义表单（完）--（html5版本）](https://blog.csdn.net/wlmnzf/article/details/50678115)
+14. [开源 java CMS - FreeCMS2.6 自定义表单](https://blog.csdn.net/vkqiang/article/details/69371764)
+15. [web工作流管理系统开发之一 工作流概念](http://www.cnblogs.com/webreport/archive/2009/09/02/1558731.html)
+16. [ls命令](https://coderdream.github.io/command-ls)
+17. [find命令](https://coderdream.github.io/command-find)
 
 
 2018年第31周（2018/07/30~2018/08/05）

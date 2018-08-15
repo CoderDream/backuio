@@ -153,12 +153,18 @@ npm config rm https-proxy
 
 ```
 
-然后使用npm install -g cnpm --registry=https://registry.npm.taobao.org安装淘宝的cnpm
+然后使用  
+```shell
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+安装淘宝的cnpm，然后就可以使用cnpm命令了。
 
-然后就可以使用cnpm命令了
-
-
-
+## 查看sinopia自定义内源列表信息 ##
+```shell
+[root@localhost storage]# vi .sinopia-db.json
+[root@localhost storage]# pwd #地址
+/root/.config/sinopia/storage
+```
 
 
 
