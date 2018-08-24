@@ -1,3 +1,9 @@
+2018年第34周（2018/08/20~2018/08/26）
+----------
+1. [nrm -- NPM registry 管理工具](https://coderdream.github.io/201834#20183401) 
+2. [怎么样给linux文件添加可执行权限](https://coderdream.github.io/201834#20183402)
+3. [CentOS7下安装google chrome浏览器](https://coderdream.github.io/201834#20183403)
+
 2018年第33周（2018/08/13~2018/08/19）
 ----------
 1. [centos6.5+postgresql10环境搭建](https://blog.csdn.net/mate_ge/article/details/78841351) 
@@ -8,6 +14,8 @@
 6. [在Node.js中使用TCP套接字编程](https://cnodejs.org/topic/4fb1c1fd1975fe1e1310490b)
 7. [学习 NodeJS 第八天：Socket 通讯](https://blog.csdn.net/zhangxin09/article/details/12844975)
 8. [Node游戏服务器源代码（TCP通讯，mongodb，文件读写，数据加密，子父进程通讯）开心连三国](https://github.com/xyfcode/zspeed)
+9. [MongoDB+MongoVUE安装及入门](https://blog.csdn.net/lupengfei1009/article/details/50832996)
+10. 
 
 2018年第32周（2018/08/06~2018/08/12）
 ----------
