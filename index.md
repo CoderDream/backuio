@@ -3,6 +3,7 @@
 1. [nrm -- NPM registry 管理工具](https://coderdream.github.io/201834#20183401) 
 2. [怎么样给linux文件添加可执行权限](https://coderdream.github.io/201834#20183402)
 3. [CentOS7下安装google chrome浏览器](https://coderdream.github.io/201834#20183403)
+4. [vmware linux虚拟机与本地物理机共享文件夹](https://www.linuxidc.com/Linux/2017-04/142897.htm)
 
 2018年第33周（2018/08/13~2018/08/19）
 ----------
