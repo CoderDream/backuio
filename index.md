@@ -1,3 +1,14 @@
+2018年第35周（2018/08/27~2018/09/02）
+----------
+1. [CentOS7 安装 mongodb](https://blog.csdn.net/wangzuokun/article/details/70799976) 
+2. [CentOS 7上安装 MongoDB数据库 4.0.0最新版](http://www.mamicode.com/info-detail-2371195.html)
+3. [mongoDB Configuration File Options](https://docs.mongodb.com/manual/reference/configuration-options/)
+4. [centos Mongodb 基础使用](https://blog.csdn.net/zhouzhiwengang/article/details/51446582)
+5. [MongoDB常用操作命令大全](https://www.jb51.net/article/48217.htm)
+6. [CentOS 7上安装 MongoDB数据库 4.1.1最新版](https://coderdream.github.io/201835#20183501) 
+7. [CentOS查看和修改PATH环境变量的方法](https://coderdream.github.io/201835#20183502) 
+
+
 2018年第34周（2018/08/20~2018/08/26）
 ----------
 1. [nrm -- NPM registry 管理工具](https://coderdream.github.io/201834#20183401) 
@@ -16,7 +27,6 @@
 7. [学习 NodeJS 第八天：Socket 通讯](https://blog.csdn.net/zhangxin09/article/details/12844975)
 8. [Node游戏服务器源代码（TCP通讯，mongodb，文件读写，数据加密，子父进程通讯）开心连三国](https://github.com/xyfcode/zspeed)
 9. [MongoDB+MongoVUE安装及入门](https://blog.csdn.net/lupengfei1009/article/details/50832996)
-10. 
 
 2018年第32周（2018/08/06~2018/08/12）
 ----------
