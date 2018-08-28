@@ -10,6 +10,11 @@
 8. [CentOS下手动安装gcc最佳实践](https://coderdream.github.io/201835#20183503) 
 9. [CentOS下手动安装nodejs最佳实践](https://coderdream.github.io/201835#20183504) 
 10. [CentOS7.2 安装Chrome](https://www.cnblogs.com/hongdada/p/6671065.html) 
+11. [单点登录原理与简单实现](https://www.cnblogs.com/ywlaker/p/6113927.html) 
+12. [单点登录的三种实现方式](https://cnodejs.org/topic/55f6e69904556da7553d20dd)
+13. [单点登录之CAS原理和实现](https://blog.csdn.net/qq_24708791/article/details/78535565)
+14. [SSO单点登录三种情况的实现方式详解](https://www.cnblogs.com/wxj-106/p/8097880.html)
+15. [认识单点登录(nodejs)](https://www.cnblogs.com/yexiaochai/p/4422460.html)
 
 
 2018年第34周（2018/08/20~2018/08/26）
