@@ -7,6 +7,9 @@
 5. [MongoDB常用操作命令大全](https://www.jb51.net/article/48217.htm)
 6. [CentOS 7上安装 MongoDB数据库 4.1.1最新版](https://coderdream.github.io/201835#20183501) 
 7. [CentOS查看和修改PATH环境变量的方法](https://coderdream.github.io/201835#20183502) 
+8. [CentOS下手动安装gcc最佳实践](https://coderdream.github.io/201835#20183503) 
+9. [CentOS下手动安装nodejs最佳实践](https://coderdream.github.io/201835#20183504) 
+10. [CentOS7.2 安装Chrome](https://www.cnblogs.com/hongdada/p/6671065.html) 
 
 
 2018年第34周（2018/08/20~2018/08/26）
