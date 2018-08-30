@@ -16,6 +16,8 @@
 14. [SSO单点登录三种情况的实现方式详解](https://www.cnblogs.com/wxj-106/p/8097880.html)
 15. [认识单点登录(nodejs)](https://www.cnblogs.com/yexiaochai/p/4422460.html)
 16. [Sourcetree跳过注册的方法](https://www.cnblogs.com/lucio110/p/8192792.html)
+17. [Struts2最佳实践之crud（Maven版）](https://github.com/CoderDream/struts-examples/tree/master/crud)
+18. [How To Create A Struts 2 Web Application(官网)](http://struts.apache.org/getting-started/how-to-create-a-struts2-web-application.html)
 
 
 2018年第34周（2018/08/20~2018/08/26）
