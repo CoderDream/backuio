@@ -1,3 +1,12 @@
+2018年第36周（2018/09/03~2018/09/09）
+----------
+1. [从零开始nodejs系列文章](http://blog.fens.me/series-nodejs/) 
+2. [深入浅出Node.js系列](https://blog.csdn.net/zhangyuan19880606/article/category/6246826)
+3. [Nodejs学习笔记](https://github.com/chyingp/nodejs-learning-guide/blob/master/index.md)
+4. [Nodejs基础中间件Connect](https://www.cnblogs.com/chris-oil/p/5625437.html)
+5. [nodejs之日志管理](https://www.cnblogs.com/yjfengwen/p/3827217.html)
+6. [Passport现实社交网络OAuth登陆](http://blog.fens.me/nodejs-oauth-passport/)
+
 2018年第35周（2018/08/27~2018/09/02）
 ----------
 1. [CentOS7 安装 mongodb](https://blog.csdn.net/wangzuokun/article/details/70799976) 
