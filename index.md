@@ -6,6 +6,12 @@
 4. [Nodejs基础中间件Connect](https://www.cnblogs.com/chris-oil/p/5625437.html)
 5. [nodejs之日志管理](https://www.cnblogs.com/yjfengwen/p/3827217.html)
 6. [Passport现实社交网络OAuth登陆](http://blog.fens.me/nodejs-oauth-passport/)
+7. [CentOS 7 创建桌面快捷方式](https://www.cnblogs.com/lenmom/p/9193183.html)
+8. [CentOS7(GNOME)设置桌面图标大小缩放](https://blog.csdn.net/Leeniux/article/details/80828074)
+9. [CentOS7将应用快捷方式加到桌面](https://blog.csdn.net/Run_the_youth/article/details/51587077)
+10. [使用Travis进行持续集成(Java)](https://www.liaoxuefeng.com/article/0014631488240837e3633d3d180476cb684ba7c10fda6f6000)
+11. [Travis CI 系列：自动化部署博客(php)](https://segmentfault.com/a/1190000011218410)
+12. [Nodejs开源项目里怎么样写测试、CI和代码测试覆盖率](https://cnodejs.org/topic/558df089ebf9c92d17e73358) 
 
 2018年第35周（2018/08/27~2018/09/02）
 ----------
