@@ -18,7 +18,7 @@ var app = express();
 参数`root`为静态资源的所在的根目录。
 参数`options`是可选的，支持以下的属性：
 |属性|描述|类型|默认值|
-|:----:|:----:|:----:|:------:|
+| - | :-: | :-: | -: | 
 |dotfiles|是否响应点文件。供选择的值有"allow"，"deny"和"ignore"|String|"ignore"|
 |etag|使能或者关闭etag|Boolean|true|
 |extensions|设置文件延期回退|Boolean|true|
@@ -296,11 +296,12 @@ Express支持下面的路由方法，对应与同名的HTTP方法：
     </tbody>
 </table>
 
->如果使用上述方法时，导致了无效的javascript的变量名，可以使用中括号符号，比如,`app['m-search']('/', function ...`
+
+> 如果使用上述方法时，导致了无效的javascript的变量名，可以使用中括号符号，比如,`app['m-search']('/', function ...`
 
 你可以提供多个回调函数，它们的行为和中间件一样，除了这些回调可以通过调用`next('router')`来绕过剩余的路由回调。你可以使用这个机制来为一个路由设置一些前提条件，如果请求没有满足当前路由的处理条件，那么传递控制到随后的路由。
 
->本API文档把使用比较多的HTTP方法`app.get()`，`app.post`，`app.put()`，`app.delete()`作为一个个单独的项进行说明。然而，其他上述列出的方法以完全相同的方式工作。
+> 本API文档把使用比较多的HTTP方法`app.get()`，`app.post`，`app.put()`，`app.delete()`作为一个个单独的项进行说明。然而，其他上述列出的方法以完全相同的方式工作。
 
 `app.all()`是一个特殊的路由方法，它不属于HTTP协议中的规定的方法。它为一个路径加载中间件，其对所有的请求方法都有效。
 
