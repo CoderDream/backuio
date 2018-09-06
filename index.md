@@ -12,6 +12,7 @@
 10. [使用Travis进行持续集成(Java)](https://www.liaoxuefeng.com/article/0014631488240837e3633d3d180476cb684ba7c10fda6f6000)
 11. [Travis CI 系列：自动化部署博客(php)](https://segmentfault.com/a/1190000011218410)
 12. [Nodejs开源项目里怎么样写测试、CI和代码测试覆盖率](https://cnodejs.org/topic/558df089ebf9c92d17e73358) 
+13. [Express 4.x API](https://coderdream.github.io/Express_4.x_API_Chinese)
 
 2018年第35周（2018/08/27~2018/09/02）
 ----------
