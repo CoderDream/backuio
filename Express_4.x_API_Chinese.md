@@ -34,6 +34,7 @@ var app = express();
 
 ## Application()
 `app`对象一般用来表示Express程序。通过调用Express模块导出的顶层的`express()`方法来创建它:
+
 ```js
 var express = require('express');
 var app = express();
@@ -87,7 +88,9 @@ admin.get('/', function(req, res) {
 
 app.use('/admin', admin); // mount the sub app
 ```
-它和req对象的[baseUrl][11]属性比较相似，除了`req.baseUrl`是匹配的URL路径，而不是匹配的模式。如果一个子程序被挂载在多条路径模式，`app.mountpath`就是一个关于挂载路径模式项的列表，如下面例子所示。
+它和req对象的[baseUrl][11]属性比较相似，除了'req.baseUrl'是匹配的URL路径，而不是匹配的模式。如果一个子程序被挂载在多条路径模式，
+'app.mountpath'就是一个关于挂载路径模式项的列表，如下面例子所示。
+
 ```js
 var admin = express();
 admin.get('/', function(req, res) {
@@ -253,6 +256,7 @@ app.get('title');
 获取更多信息，请看[routing guide][21]。
 Express支持下面的路由方法，对应与同名的HTTP方法：
 
+
 <table style="border:0px;background:node">
     <tbody>
         <tr>
@@ -282,7 +286,7 @@ Express支持下面的路由方法，对应与同名的HTTP方法：
                 <li>proppatch</li>
                 <ul>
             </td>
-                        <td style="background:none;border:0px;">
+            <td style="background:none;border:0px;">
                <ul>
                 <li>purege</li>
                 <li>put</li>
@@ -299,7 +303,7 @@ Express支持下面的路由方法，对应与同名的HTTP方法：
 </table>
 
 
-> 如果使用上述方法时，导致了无效的javascript的变量名，可以使用中括号符号，比如,`app['m-search']('/', function ...`
+如果使用上述方法时，导致了无效的javascript的变量名，可以使用中括号符号，比如,`app['m-search']('/', function ...`
 
 你可以提供多个回调函数，它们的行为和中间件一样，除了这些回调可以通过调用`next('router')`来绕过剩余的路由回调。你可以使用这个机制来为一个路由设置一些前提条件，如果请求没有满足当前路由的处理条件，那么传递控制到随后的路由。
 
