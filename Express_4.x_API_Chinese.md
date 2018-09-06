@@ -1,10 +1,10 @@
-﻿# Express 4.x API
+# Express 4.x API
 
 标签（空格分隔）： express 翻译 api文档 中文
 
 ---
 
-##express()
+## express() ##
 
 `express()`用来创建一个Express的程序。`express()`方法是***express***模块导出的顶层方法。
 ```js
@@ -12,8 +12,8 @@ var express = require('express');
 var app = express();
 ```
 
-###Methods
-####express.static(root, [options])
+### Methods
+#### express.static(root, [options])
 `express.static`是Express中唯一的内建中间件。它以[server-static][1]模块为基础开发，负责托管 Express 应用内的静态资源。
 参数`root`为静态资源的所在的根目录。
 参数`options`是可选的，支持以下的属性：
@@ -30,7 +30,7 @@ var app = express();
 
 如果你想获得更多关于使用中间件的细节，你可以查阅[Serving static files in Express][3]。
 
-##Application()
+## Application()
 `app`对象一般用来表示Express程序。通过调用Express模块导出的顶层的`express()`方法来创建它:
 ```js
 var express = require('express');
@@ -51,8 +51,8 @@ app.listen(3000);
 
 它还有一些属性设置，这些属性可以改变程序的行为。获得更多的信息，可以查阅[Application settings][9]。
 
-###Properties
-####app.locals
+### Properties
+#### app.locals
 `app.locals`对象是一个javascript对象，它的属性就是程序本地的变量。
 ```js
 app.locals.title
@@ -70,7 +70,7 @@ app.locals.strftime = require('strftime');
 app.locals.email = 'me@myapp.com';
 ```
 
-####app.mountpath
+#### app.mountpath
 `app.mountpath`属性是子程序挂载的路径模式。
 >一个子程序是一个`express`的实例，其可以被用来作为路由句柄来处理请求。
 >
@@ -104,8 +104,8 @@ app.use(['/adm*n', '/manager'], admin); // load the 'admin' router on '/adm*n' a
 
 ```
 
-###Events
-####app.on('mount', callback(parent))
+### Events
+#### app.on('mount', callback(parent))
 当子程序被挂载到父程序时，`mount`事件被发射。父程序对象作为参数，传递给回调方法。
 ```js
 var admin = express();
@@ -122,8 +122,8 @@ app.use('/admin', admin);
 
 ```
 
-###Methods
-####app.all(path, callback[, callback ...]
+### Methods
+#### app.all(path, callback[, callback ...]
 `app.all`方法和标准的`app.METHOD()`方法相似，除了它匹配所有的HTTP动词。
 对于给一个特殊前缀映射一个全局的逻辑处理，或者无条件匹配，它是很有效的。例如，如果你把下面内容放在所有其他的路由定义的前面，它要求所有从这个点开始的路由需要认证和自动加载一个用户。记住这些回调并不是一定是终点:`loadUser`可以在完成了一个任务后，调用`next()`方法来继续匹配随后的路由。
 ```js
@@ -139,7 +139,7 @@ app.all('*', requireAuthentication, loadUser);
 app.all('/api/*', requireAuthentication);
 ```
 
-####app.delete(path, callback[, callback ...])
+#### app.delete(path, callback[, callback ...])
 路由`HTTP DELETE`请求到有特殊回调方法的特殊的路径。获取更多的信息，可以查阅[routing guide][12]。
 你可以提供多个回调函数，它们的行为和中间件一样，除了这些回调可以通过调用`next('router')`来绕过剩余的路由回调。你可以使用这个机制来为一个路由设置一些前提条件，如果不能满足当前路由的处理条件，那么你可以传递控制到随后的路由。
 ```js
@@ -148,7 +148,7 @@ app.delete('/', function(req, res) {
 });
 ```
 
-####app.disable(name)
+#### app.disable(name)
 设置类型为布尔的设置名为`name`的值为`false`，此处的`name`是[app settings table][13]中各属性的一个。调用`app.set('foo', false)`和调用`app.disable('foo')`是等价的。
 比如:
 ```js
@@ -156,7 +156,7 @@ app.disable('trust proxy');
 app.get('trust proxy');
 // => false
 ```
-####app.disabled(name)
+#### app.disabled(name)
 返回`true`如果布尔类型的设置值`name`被禁用为`false`，此处的`name`是[app settings table][14]中各属性的一个。
 ```js
     app.disabled('trust proxy');
@@ -166,14 +166,14 @@ app.get('trust proxy');
     // => false
 ```
 
-####app.enable(name)
+#### app.enable(name)
 设置布尔类型的设置值`name`为`true`，此处的`name`是[app settings table][15]中各属性的一个。调用`app.set('foo', true)`和调用`app.enable('foo')`是等价的。
 ```js
     app.enable('trust proxy');
     app.get('trust proxy');
     // => true
 ```
-####app.enabled(name)
+#### app.enabled(name)
 返回`true`如果布尔类型的设置值`name`被启动为`true`，此处的`name`是[app settings table][16]中各属性的一个。
 ```js
     app.enabled('trust proxy');
@@ -183,7 +183,7 @@ app.get('trust proxy');
     // => true
 ```
 
-####app.engine(ext, callback)
+#### app.engine(ext, callback)
 注册给定引擎的回调，用来渲染处理ext文件。
 默认情况下，Express需要使用`require()`来加载基于文件扩展的引擎。例如，如果你尝试渲染一个`foo.jade`文件，Express在内部调用下面的内容，同时缓存`require()`结果供随后的调用，来加速性能。
 ```js
@@ -201,7 +201,7 @@ var engines = require('consolidate');
 app.engine('haml', engines.haml);
 app.engine('html', engines.hogan);
 ```
-####app.get(name)
+#### app.get(name)
 获得设置名为`name`的app设置的值，此处的`name`是[app settings table][18]中各属性的一个。
 如下：
 ```js
@@ -213,7 +213,7 @@ app.get('title');
 // => 'My Site'
 ```
 
-####app.get(path, callback [, callback ...])
+#### app.get(path, callback [, callback ...])
 路由`HTTP GET`请求到有特殊回调的特殊路径。获取更多的信息，可以查阅[routing guide][19]。
 你可以提供多个回调函数，它们的行为和中间件一样，除了这些回调可以通过调用`next('router')`来绕过剩余的路由回调。你可以使用这个机制来为一个路由设置一些前提条件，如果请求没能满足当前路由的处理条件，那么传递控制到随后的路由。
 ```js
@@ -222,7 +222,7 @@ app.get('title');
     });
 ```
 
-####app.listen(port, [hostname], [backlog], [callback])
+#### app.listen(port, [hostname], [backlog], [callback])
 绑定程序监听端口到指定的主机和端口号。这个方法和`Node`中的[http.Server.listen()][20]是一样的。
 ```js
     var express = require('express');
@@ -246,7 +246,7 @@ app.get('title');
     };
 ```
 
-####app.METHOD(path, callback [, callback ...])
+#### app.METHOD(path, callback [, callback ...])
 路由一个HTTP请求，`METHOD`是这个请求的HTTP方法，比如`GET`，`PUT`，`POST`等等，注意是小写的。所以，实际的方法是`app.get()`，`app.post()`，`app.put()`等等。下面有关于方法的完整的表。
 获取更多信息，请看[routing guide][21]。
 Express支持下面的路由方法，对应与同名的HTTP方法：
@@ -311,7 +311,7 @@ Express支持下面的路由方法，对应与同名的HTTP方法：
     });
 ```
 
-####app.param([name], callback)
+#### app.param([name], callback)
 给路由参数添加回调触发器，这里的`name`是参数名或者参数数组，`function`是回调方法。回调方法的参数按序是请求对象，响应对象，下个中间件，参数值和参数名。
 如果`name`是数组，会按照各个参数在数组中被声明的顺序将回调触发器注册下来。还有，对于除了最后一个参数的其他参数，在他们的回调中调用`next()`来调用下个声明参数的回调。对于最后一个参数，在回调中调用`next()`将调用位于当前处理路由中的下一个中间件，如果`name`只是一个`string`那就和它是一样的(就是说只有一个参数，那么就是最后一个参数，和数组中最后一个参数是一样的)。
 例如，当`:user`出现在路由路径中，你可以映射用户加载的逻辑处理来自动提供`req.user`给这个路由，或者对输入的参数进行验证。
@@ -438,7 +438,7 @@ and this mathes too
 > router.get('[[\\s\\S]]*', function); 
 >```
 
-####app.path()
+#### app.path()
 通过这个方法可以得到`app`典型的路径，其是一个`string`。
 ```js
     var app = express()
@@ -454,7 +454,7 @@ and this mathes too
 ```
 如果`app`挂载很复杂下，那么这个方法的行为也会很复杂：一种更好用的方式是使用`req.baseUrl`来获得这个app的典型路径。
 
-####app.post(path, callback, [callback ...])
+#### app.post(path, callback, [callback ...])
 路由`HTTP POST`请求到有特殊回调的特殊路径。获取更多的信息，可以查阅[routing guide][22]。
 你可以提供多个回调函数，它们的行为和中间件一样，除了这些回调可以通过调用`next('router')`来绕过剩余的路由回调。你可以使用这个机制来为一个路由设置一些前提条件，如果请求没能满足当前路由的处理条件，那么传递控制到随后的路由。
 ```js
@@ -463,7 +463,7 @@ and this mathes too
     });
 ```
 
-####app.put(path, callback, [callback ...])
+#### app.put(path, callback, [callback ...])
 路由`HTTP PUT`请求到有特殊回调的特殊路径。获取更多的信息，可以查阅[routing guide][23]。
 你可以提供多个回调函数，它们的行为和中间件一样，除了这些回调可以通过调用`next('router')`来绕过剩余的路由回调。你可以使用这个机制来为一个路由设置一些前提条件，如果请求没能满足当前路由的处理条件，那么传递控制到随后的路由。
 ```js
@@ -472,7 +472,7 @@ and this mathes too
     });
 ```
 
-####app.render(view, [locals], callback)
+#### app.render(view, [locals], callback)
 通过`callback`回调返回一个`view`渲染之后得到的HTML文本。它可以接受一个可选的参数，可选参数包含了这个`view`需要用到的本地数据。这个方法类似于`res.render()`，除了它不能把渲染得到的HTML文本发送给客户端。
 >将`app.render()`当作是可以生成渲染视图字符串的工具方法。在`res.render()`内部，就是使用的`app.render()`来渲染视图。
 
@@ -488,7 +488,7 @@ and this mathes too
     });
 ```
 
-####app.route(path)
+#### app.route(path)
 返回一个单例模式的路由的实例，之后你可以在其上施加各种HTTP动作的中间件。使用`app.route()`来避免重复路由名字(因此错字错误)--说的意思应该是使用`app.router()`这个单例方法来避免同一个路径多个路由实例。
 ```js
 var app = express();
@@ -506,7 +506,7 @@ app.route('/events')
 })
 
 ```
-####app.set(name, value)
+#### app.set(name, value)
 给`name`设置项赋`value`值，`name`是[app settings table][24]中属性的一项。
 对于一个类型是布尔型的属性调用`app.set('foo', ture)`等价于调用`app.enable('foo')`。同样的，调用`app.set('foo', false)`等价于调用`app.disable('foo')`。
 可以使用`app.get()`来取得设置的值：
@@ -514,7 +514,7 @@ app.route('/events')
     app.set('title', 'My Site');
     app.get('title'); // 'My Site'
 ```
-**Application Settings**
+** Application Settings **
 如果`name`是程序设置之一，它将影响到程序的行为。下边列出了程序中的设置。
 |Property|Type|Value|Default|
 |:---:|:---:|:---:|:---:|
@@ -533,7 +533,7 @@ app.route('/events')
 |view engine|String|省略时，默认的引擎被扩展使用。||
 |x-powered-by|Boolean|启用`X-Powered-By:Express`HTTP头部|true|
 
-**Options for `trust proxy` settings**
+** Options for `trust proxy` settings **
 查阅[Express behind proxies][29]来获取更多信息。
 
 <table>
@@ -581,7 +581,7 @@ app.route('/events')
 </tbody>
 </table>
 
-**Options for `etag` settings**
+** Options for `etag` settings **
 `ETag`功能的实现使用了[etag][30]包。如果你需要获得更多的信息，你可以查阅它的文档。
 
 <table>
@@ -611,7 +611,7 @@ app.route('/events')
 </tbody>
 </table>
 
-####app.use([path,], function [, function...])
+#### app.use([path,], function [, function...])
 挂载[中间件][31]方法到路径上。如果路径未指定，那么默认为"/"。
 >一个路由将匹配任何路径如果这个路径以这个路由设置路径后紧跟着"/"。比如：`app.use('/appale', ...)`将匹配"/apple"，"/apple/images"，"/apple/images/news"等。
 
@@ -827,7 +827,7 @@ app.use(express.static(__dirname + '/files'));
 app.use(express.static(__dirname + '/uploads'));
 ```
 
-##Request
+## Request
 `req`对象代表了一个HTTP请求，其具有一些属性来保存请求中的一些数据，比如`query string`，`parameters`，`body`，`HTTP headers`等等。在本文档中，按照惯例，这个对象总是简称为`req`(http响应简称为`res`)，但是它们实际的名字由这个回调方法在那里使用时的参数决定。
 如下例子:
 ```js
@@ -842,10 +842,10 @@ app.use(express.static(__dirname + '/uploads'));
     });
 ```
 
-###Properties
+### Properties
 在`Express 4`中，`req.files`默认在`req`对象中不再是可用的。为了通过`req.files`对象来获得上传的文件，你可以使用一个`multipart-handling`(多种处理的工具集)中间件，比如`busboy`，`multer`，`formidable`，`multipraty`，`connect-multiparty`或者`pez`。
 
-####req.app
+#### req.app
 这个属性持有`express`程序实例的一个引用，其可以作为中间件使用。
 如果你按照这个模式，你创建一个模块导出一个中间件，这个中间件只在你的主文件中`require()`它，那么这个中间件可以通过`req.app`来获取express的实例。
 例如:
@@ -861,7 +861,7 @@ module.exports = function(req, res) {
 };
 ```
 
-####req.baseUrl
+#### req.baseUrl
 一个路由实例挂载的Url路径。
 ```js
     var greet = express.Router();
@@ -878,7 +878,7 @@ app.use(['/gre+t', 'hel{2}o'], greet); // load the on router on '/gre+t' and '/h
 当一个请求路径是`/greet/jp`，`baseUrl`是`/greet`，当一个请求路径是`/hello/jp`，`req.baseUrl`是`/hello`。
 `req.baseUrl`和`app`对象的[mountpath][32]属性相似，除了`app.mountpath`返回的是路径匹配模式。
 
-####req.body
+#### req.body
 在请求的body中保存的是提交的一对对键值数据。默认情况下，它是`undefined`，当你使用比如`body-parser`和`multer`这类解析`body`数据的中间件时，它是填充的。
 下面的例子，给你展示了怎么使用`body-parser`中间件来填充`req.body`。
 ```js
@@ -895,7 +895,7 @@ app.use(['/gre+t', 'hel{2}o'], greet); // load the on router on '/gre+t' and '/h
     });
 ```
 
-####req.cookies
+#### req.cookies
 当使用`cookie-parser`中间件的时候，这个属性是一个对象，其包含了请求发送过来的`cookies`。如果请求没有带`cookies`，那么其值为`{}`。
 ```js
     // Cookie: name=tj
@@ -903,7 +903,7 @@ app.use(['/gre+t', 'hel{2}o'], greet); // load the on router on '/gre+t' and '/h
     // => "tj"
 ```
 获取更多信息，问题，或者关注，可以查阅[cookie-parser][33]。
-####req.fresh
+#### req.fresh
 指示这个请求是否是新鲜的。其和`req.stale`是相反的。
 当`cache-control`请求头没有`no-cache`指示和下面中的任一一个条件为`true`，那么其就为`true`：
 
@@ -916,7 +916,7 @@ app.use(['/gre+t', 'hel{2}o'], greet); // load the on router on '/gre+t' and '/h
     // => true
 ```
 
-####req.hostname
+#### req.hostname
 包含了源自`Host`HTTP头部的`hostname`。
 当`trust proxy`设置项被设置为启用值，`X-Forwarded-Host`头部被使用来代替`Host`。这个头部可以被客户端或者代理设置。
 ```js
@@ -924,10 +924,10 @@ app.use(['/gre+t', 'hel{2}o'], greet); // load the on router on '/gre+t' and '/h
 req.hostname
 // => "example.com"
 ```
-####req.ips
+#### req.ips
 当`trust proxy`设置项被设置为启用值，这个属性包含了一组在`X-Forwarded-For`请求头中指定的IP地址。不然，其就包含一个空的数组。这个头部可以被客户端或者代理设置。
 例如，如果`X-Forwarded-For`是`client`，`proxy1`，`proxy2`，`req.ips`就是`["clinet", "proxy1", "proxy2"]`，这里`proxy2`就是最远的下游。
-####req.originalUrl
+#### req.originalUrl
 >`req.url`不是一个原生的`Express`属性，它继承自[Node's http module][34]。
 
 这个属性很像`req.url`；然而，其保留了原版的请求链接，允许你自由地重定向`req.url`到内部路由。比如，`app.use()`的`mounting`特点可以重定向`req.url`跳转到挂载点。
@@ -937,7 +937,7 @@ req.originalUrl
 // => "/search?q=something"
 ```
 
-####req.params
+#### req.params
 一个对象，其包含了一系列的属性，这些属性和在路由中命名的参数名是一一对应的。例如，如果你有`/user/:name`路由，`name`属性可作为`req.params.name`。这个对象默认值为`{}`。
 ```js
 // GET /user/tj
@@ -950,7 +950,7 @@ req.params.name
 req.params[0]
 // => "javascripts/jquery.js"
 ```
-####req.path
+#### req.path
 包含请求URL的部分路径。
 ```js
 // example.com/users?sort=desc
@@ -960,7 +960,7 @@ req.path
 
 > 当在一个中间件中被调用，挂载点不包含在`req.path`中。你可以查阅[app.use()][35]获得跟多的信息。
 
-####req.protocol
+#### req.protocol
 请求的协议，一般为`http`，当启用TLS加密，则为`https`。
 当`trust proxy`设置一个启用的参数，如果存在`X-Forwarded-Proto`头部的话，其将被信赖和使用。这个头部可以被客户端或者代理设置。
 ```js
@@ -968,7 +968,7 @@ req.ptotocol
 // => "http"
 ```
 
-####req.query
+#### req.query
 一个对象，为每一个路由中的`query string`参数都分配一个属性。如果没有`query string`，它就是一个空对象，`{}`。
 ```js
 // GET /search?q=tobi+ferret
@@ -986,7 +986,7 @@ req.query.shoe.type
 // => "converse"
 ```
 
-####req.route
+#### req.route
 当前匹配的路由，其为一串字符。比如：
 ```js
 app.get('/user/:id?', function userIdHandler(req, res) {
@@ -1011,13 +1011,13 @@ app.get('/user/:id?', function userIdHandler(req, res) {
     methods:{get:true}
 }
 ```
-####req.secure
+#### req.secure
 一个布尔值，如果建立的是TLS的连接，那么就为`true`。等价与：
 ```js
     'https' == req.protocol;
 ```
 
-####req.signedCookies
+#### req.signedCookies
 当使用`cookie-parser`中间件的时候，这个属性包含的是请求发过来的签名`cookies`，不签名的并且为使用做好了准备(这句真不知道怎么翻译了...)。签名`cookies`驻留在不同的对象中来体现开发者的意图；不然，一个恶意攻击可以被施加在`req.cookie`值上(它是很容易被欺骗的)。记住，签名一个`cookie`不是把它藏起来或者加密；而是简单的防止篡改(因为签名使用的加密是私人的)。如果没有发送签名的`cookie`，那么这个属性默认为`{}`。
 ```js
 // Cookie： user=tobi.CP7AWaXDfAKIRfH49dQzKJx7sKzzSoPq7/AcBBRVwlI3
@@ -1026,14 +1026,14 @@ req.signedCookies.user
 ```
 为了获取更多的信息，问题或者关注，可以参阅[cookie-parser][36]。
 
-####req.stale
+#### req.stale
 指示这个请求是否是`stale`(陈旧的)，它与`req.fresh`是相反的。更多信息，可以查看[req.fresh][37]。
 ```js
 req.stale
 // => true
 ```
 
-####req.subdomains
+#### req.subdomains
 请求中域名的子域名数组。
 ```js
 // Host: "tobi.ferrets.example.com"
@@ -1041,7 +1041,7 @@ req.subdomains
 // => ["ferrets", "tobi"]
 ```
 
-####req.xhr
+#### req.xhr
 一个布尔值，如果`X-Requested-With`的值为`XMLHttpRequest`，那么其为`true`，其指示这个请求是被一个客服端库发送，比如`jQuery`。
 ```js
 req.xhr
@@ -1049,8 +1049,8 @@ req.xhr
 
 ```
 
-###Methods
-####req.accepts(types)
+### Methods
+#### req.accepts(types)
 检查这个指定的内容类型是否被接受，基于请求的`Accept` HTTP头部。这个方法返回最佳匹配，如果没有一个匹配，那么其返回`undefined`(在这个case下，服务器端应该返回406和"Not Acceptable")。
 `type`值可以是一个单的`MIME type`字符串(比如`application/json`)，一个扩展名比如`json`，一个逗号分隔的列表，或者一个数组。对于一个列表或者数组，这个方法返回最佳项(如果有的话)。
 ```js
@@ -1083,19 +1083,19 @@ req.accepts(['html', 'json']);
 ```
 获取更多信息，或者如果你有问题或关注，可以参阅[accepts][38]。
 
-####req.acceptsCharsets(charset[, ...])
+#### req.acceptsCharsets(charset[, ...])
 返回指定的字符集集合中第一个的配置的字符集，基于请求的`Accept-Charset`HTTP头。如果指定的字符集没有匹配的，那么就返回false。
 获取更多信息，或者如果你有问题或关注，可以参阅[accepts][39]。
 
-####req.acceptsEncodings(encoding[, ...])
+#### req.acceptsEncodings(encoding[, ...])
 返回指定的编码集合中第一个的配置的编码，基于请求的`Accept-Encoding`HTTP头。如果指定的编码集没有匹配的，那么就返回false。
 获取更多信息，或者如果你有问题或关注，可以参阅[accepts][40]。
 
-####req.acceptsLanguages(lang [, ...])
+#### req.acceptsLanguages(lang [, ...])
 返回指定的语言集合中第一个的配置的语言，基于请求的`Accept-Language`HTTP头。如果指定的语言集没有匹配的，那么就返回false。
 获取更多信息，或者如果你有问题或关注，可以参阅[accepts][41]。
 
-####req.get(field)
+#### req.get(field)
 返回指定的请求HTTP头部的域内容(不区分大小写)。`Referrer`和`Referer`的域内容可互换。
 ```js
 req.get('Content-type');
@@ -1109,7 +1109,7 @@ req.get('Something')
 ```
 其是`req.header(field)`的别名。
 
-####req.is(type)
+#### req.is(type)
 如果进来的请求的`Content-type`头部域匹配参数`type`给定的`MIME type`，那么其返回`true`。否则返回`false`。
 ```js
 // With Content-Type: text/html; charset=utf-8
@@ -1129,7 +1129,7 @@ req.is('html');
 ```
 获取更多信息，或者如果你有问题或关注，可以参阅[type-is][42]。
 
-####req.param(naem, [, defaultValue])
+#### req.param(naem, [, defaultValue])
 > 过时的。可以在适合的情况下，使用`req.params`，`req.body`或者`req.query`。
 
 返回当前参数`name`的值。
@@ -1156,7 +1156,7 @@ req.param('name')
 > `Body-parser`中间件必须加载，如果你使用`req.param()`。详细请看[req.body][43]。
 
 
-##Response
+## Response
 `res`对象代表了当一个HTTP请求到来时，`Express`程序返回的HTTP响应。在本文档中，按照惯例，这个对象总是简称为`res`(http请求简称为`req`)，但是它们实际的名字由这个回调方法在那里使用时的参数决定。
 例如：
 ```js
@@ -1172,13 +1172,13 @@ app.get('/user/:id', function(request, response) {
 
 ```
 
-###Properties
-####res.app
+### Properties
+#### res.app
 这个属性持有`express`程序实例的一个引用，其可以在中间件中使用。
 `res.app`和请求对象中的`req.app`属性是相同的。
 
 
-####res.headersSent
+#### res.headersSent
 布尔类型的属性，指示这个响应是否已经发送HTTP头部。
 ```js
 app.get('/', function(req, res) {
@@ -1188,7 +1188,7 @@ app.get('/', function(req, res) {
 });
 ```
 
-####res.locals
+#### res.locals
 一个对象，其包含了响应的能够反应出请求的本地参数和因此只提供给视图渲染，在请求响应的周期内(如果有的话)--我要翻译吐了。否则，其和`app.locals`是一样的。(不知道翻译的什么...)
 这个参数在导出请求级别的信息是很有效的，这些信息比如请求路径，已认证的用户，用户设置等等。
 ```js
@@ -1199,8 +1199,8 @@ app.use(function(req, res, next) {
 });
 ```
 
-###Methods
-####res.append(field [, value])
+### Methods
+#### res.append(field [, value])
 > res.append()方法在`Expresxs`4.11.0以上版本才支持。
 
 在指定的`field`的HTTP头部追加特殊的值`value`。如果这个头部没有被设置，那么将用`value`新建这个头部。`value`可以是一个字符串或者数组。
@@ -1211,7 +1211,7 @@ res.append('Set-Cookie', 'foo=bar;Path=/;HttpOnly');
 res.append('Warning', '199 Miscellaneous warning');
 ```
 
-####res.attachment([filename])
+#### res.attachment([filename])
 设置HTTP响应的`Content-Disposition`头内容为"attachment"。如果提供了`filename`，那么将通过`res.type()`获得扩展名来设置`Content-Type`，并且设置`Content-Disposition`内容为"filename="parameter。
 ```js
 res.attachment();
@@ -1222,7 +1222,7 @@ res.attachment('path/to/logo.png');
 // Content-Type: image/png
 ```
 
-####res.cookie(name, value [,options])
+#### res.cookie(name, value [,options])
 设置`name`和`value`的`cookie`，`value`参数可以是一串字符或者是转化为json字符串的对象。
 options是一个对象，其可以有下列的属性。
 |属性|类型|描述|
@@ -1257,13 +1257,13 @@ res.cookie('name', 'tobi', {'signed':true});
 ```
 
 
-####res.clearCookie(name [,options])
+#### res.clearCookie(name [,options])
 根据指定的`name`清除对应的cookie。更多关于`options`对象可以查阅`res.cookie()`。
 ```js
 res.cookie('name', 'tobi', {'path':'/admin'});
 res.clearCookie('name', {'path':'admin'});
 ```
-####res.download(path, [,filename], [,fn])
+#### res.download(path, [,filename], [,fn])
 传输`path`指定文件作为一个附件。通常，浏览器提示用户下载。默认情况下，`Content-Disposition`头部"filename="的参数为`path`(通常会出现在浏览器的对话框中)。通过指定`filename`参数来覆盖默认值。
 当一个错误发生时或者传输完成，这个方法将调用`fn`指定的回调方法。这个方法使用`res.sendFile()`来传输文件。
 ```js
@@ -1281,14 +1281,14 @@ if (err) {
 });
 ```
 
-####res.end([data] [, encoding])
+#### res.end([data] [, encoding])
 结束本响应的过程。这个方法实际上来自`Node`核心模块，具体的是[response.end() method of http.ServerResponse][44]。
 用来快速结束请求，没有任何的数据。如果你需要发送数据，可以使用[res.send()][45]和[res.json()][46]这类的方法。
 ```js
 res.end();
 res.status(404).end();
 ```
-####res.format(object)
+#### res.format(object)
 进行内容协商，根据请求的对象中`Accept`HTTP头部指定的接受内容。它使用[req.accepts()][47]来选择一个句柄来为请求服务，这些句柄按质量值进行排序。如果这个头部没有指定，那么第一个方法默认被调用。当不匹配时，服务器将返回`406`"Not Acceptable"，或者调用`default`回调。
 `Content-Type`请求头被设置，当一个回调方法被选择。然而你可以改变他，在这个方法中使用这些方法，比如`res.set()`或者`res.type()`。
 下面的例子，将回复`{"message":"hey"}`，当请求的对象中`Accept`头部设置成"application/json"或者"*/json"(不过如果是`*/*`，然后这个回复就是"hey")。
@@ -1322,13 +1322,13 @@ res.format({
     }
 })
 ```
-####res.get(field)
+#### res.get(field)
 返回`field`指定的HTTP响应的头部。匹配是区分大小写。
 ```js
 res.get('Content-Type');
 // => "text/plain"
 ```
-####res.json([body])
+#### res.json([body])
 发送一个json的响应。这个方法和将一个对象或者一个数组作为参数传递给`res.send()`方法的效果相同。不过，你可以使用这个方法来转换其他的值到json，例如`null`，`undefined`。(虽然这些都是技术上无效的JSON)。
 ```js
 res.json(null);
@@ -1337,7 +1337,7 @@ res.status(500).json({error:'message'});
 
 ```
 
-####res.jsonp([body])
+#### res.jsonp([body])
 发送一个json的响应，并且支持JSONP。这个方法和`res.json()`效果相同，除了其在选项中支持JSONP回调。
 ```js
 res.jsonp(null)
@@ -1362,7 +1362,7 @@ app.set('jsonp callback name', 'cb')
 res.status(500).jsonp({error:'message'})
 // => foo({"error":"message"})
 ```
-####res.links(links)
+#### res.links(links)
 连接这些`links`，`links`是以传入参数的属性形式提供，连接之后的内容用来填充响应的Link HTTP头部。
 ```js
 res.links({
@@ -1376,7 +1376,7 @@ Link:<http://api.example.com/users?page=2>;rel="next",
 <http://api.example.com/users?page=5>;rel="last"
 ```
 
-####res.location(path)
+#### res.location(path)
 设置响应的`Location`HTTP头部为指定的`path`参数。
 ```js
     res.location('/foo/bar');
@@ -1387,7 +1387,7 @@ Link:<http://api.example.com/users?page=2>;rel="next",
 
 >Express传递指定的URL字符串作为回复给浏览器响应中的`Location`头部的值，不检测和操作，除了当是`back`这个case时。浏览器有推导预期URL从当前的URL或者指定的URL，和在`Location`指定的URL的责任；相应地重定向它。(我也不知道翻译的什么...)
 
-####res.redirect([status,] path)
+#### res.redirect([status,] path)
 重定向来源于指定`path`的URL，以及指定的[HTTP status code][49]`status`。如果你没有指定`status`，status code默认为"302 Found"。
 ```js
 res.redirect('/foo/bar');
@@ -1416,7 +1416,7 @@ res.redirect('..');
 res.redirect('back');
 ```
 
-####res.render(view [, locals] [, callback])
+#### res.render(view [, locals] [, callback])
 渲染一个视图，然后将渲染得到的HTML文档发送给客户端。可选的参数为:
 
  - `locals`，定义了视图本地参数属性的一个对象。
@@ -1442,7 +1442,7 @@ res.render('user', {name:'Tobi'}, function(err, html) {
 ```
 
 
-####res.send([body])
+#### res.send([body])
 发送HTTP响应。
 `body`参数可以是一个`Buffer`对象，一个字符串，一个对象，或者一个数组。比如：
 ```js
@@ -1470,7 +1470,7 @@ res.send({user:'tobi'});
 res.send([1, 2, 3]);
 ```
 
-####res.sendFile(path [, options] [, fn])
+#### res.sendFile(path [, options] [, fn])
 > `res.sendFile()`从`Express v4.8.0`开始支持。
 
 传输`path`指定的文件。根据文件的扩展名设置`Content-Type`HTTP头部。除非在`options`中有关于`root`的设置，`path`一定是关于文件的绝对路径。
@@ -1533,7 +1533,7 @@ app.get('/user/:uid/photos/:file', function(req, res) {
 ```
 获取更多信息，或者你有问题或者关注，可以查阅[send][52]。
 
-####res.sendStatus(statusCode)
+#### res.sendStatus(statusCode)
 设置响应对象的`HTTP status code`为`statusCode`并且发送`statusCode`的相应的字符串形式作为响应的Body。
 ```js
     res.sendStatus(200); // equivalent to res.status(200).send('OK');
@@ -1547,7 +1547,7 @@ res.sendStatus(2000); // equivalent to res.status(2000).send('2000');
 ```
 [More about HTTP Status Codes][53]
 
-####res.set(field [, value])
+#### res.set(field [, value])
 设置响应对象的HTTP头部`field`为`value`。为了一次设置多个值，那么可以传递一个对象为参数。
 ```js
 res.set('Content-Type', 'text/plain');
@@ -1560,7 +1560,7 @@ res.set({
 ```
 其和`res.header(field [,value])`效果一致。
 
-####res.status(code)
+#### res.status(code)
 使用这个方法来设置响应对象的HTTP status。其是Node中[response.statusCode][54]的一个连贯性的别名。
 ```js
 res.status(403).end();
@@ -1568,7 +1568,7 @@ res.status(400).send('Bad Request');
 res.status(404).sendFile('/absolute/path/to/404.png');
 ```
 
-####res.type(type)
+#### res.type(type)
 设置`Content-Type`HTTP头部为MIME type，如果这个指定的type能够被[mime.lookup][55]确定。如果`type`包含`/`字符，那么设置`Content-Type`为`type`(我已经晕了)。
 ```js
 res.type('.html');              // => 'text/html'
@@ -1579,18 +1579,18 @@ res.type('png');                // => image/png:
 ```
 
 
-####res.vary(field)
+#### res.vary(field)
 设置`Vary`响应头为`field`，如果已经不在那里。(不懂什么意思)
 ```js
 res.vary('User-Agent').render('docs');
 ```
 
-##Router
+## Router
 一个`router`对象是一个单独的实例关于中间件和路由。你可以认为其是一个"mini-application"（迷你程序），其具有操作中间件和路由方法的能力。每个`Express`程序有一个内建的app路由。
 路由自身表现为一个中间件，所以你可以使用它作为`app.use()`方法的一个参数或者作为另一个路由的`use()`的参数。
 顶层的`express`对象有一个`Router()`方法，你可以使用`Router()`来创建一个新的`router`对象。
 
-####Router([options])
+#### Router([options])
 如下，可以创建一个路由：
 ```js
 var router = express.Router([options]);
@@ -1623,8 +1623,8 @@ router.get('/events', function(req, res, next) {
 app.use('/calendar', router);
 ```
 
-###Methods
-####router.all(path, [callback, ...] callback)
+### Methods
+#### router.all(path, [callback, ...] callback)
 这个方法和`router.METHOD()`方法一样，除了这个方法会匹配所有的HTTP动作。
 这个方法对想映射全局的逻辑处理到特殊的路径前缀或者任意匹配是十分有用的。比如，如果你放置下面所示的这个路由在其他路由的前面，那么其将要求从这个点开始的所有的路由进行验证操作和自动加载用户信息。记住，这些全局的逻辑操作，不需要结束请求响应周期：`loaduser`可以执行一个任务，然后调用`next()`来将执行流程移交到随后的路由。
 ```js
@@ -1639,7 +1639,7 @@ router.all('*', loadUser);
 ```js
 router.all('/api/*', requireAuthentication);
 ```
-####router.METHOD(path, [callback, ...] callback)
+#### router.METHOD(path, [callback, ...] callback)
 `router.METHOD()`方法提供了路由方法在`Express`中，这里的`METHOD`是HTTP方法中的一个，比如`GET`，`PUT`，`POST`等等，但`router`中的METHOD是小写的。所以，实际的方法是`router.get()`，`router.put()`，`router.post()`等等。
 你可以提供多个回调函数，它们的行为和中间件一样，除了这些回调可以通过调用`next('router')`来绕过剩余的路由回调。你可以使用这个机制来为一个路由设置一些前提条件，如果请求没有满足当前路由的处理条件，那么传递控制到随后的路由。
 下面的片段可能说明了最简单的路由定义。Experss转换path字符串为正则表达式，用于内部匹配传入的请求。在匹配的时候，是不考虑`Query strings`，例如，"GET /"将匹配下面的路由，"GET /?name=tobi"也是一样的。
@@ -1658,7 +1658,7 @@ router.get(/^\/commits\/(\w+)(?:\.\.(\w+))?$/, function(req, res) {
 });
 ```
 
-####router.param(name, callback)
+#### router.param(name, callback)
 给路由参数添加回调触发器，这里的`name`是参数名，`function`是回调方法。回调方法的参数按序是请求对象，响应对象，下个中间件，参数值和参数名。虽然`name`在技术上是可选的，但是自Express V4.11.0之后版本不推荐使用(见下面)。
 > 不像`app.param()`，`router.param()`不接受一个数组作为路由参数。
 
@@ -1754,7 +1754,7 @@ router.get('/user/:id', function(req, res) {
         return !isNaN(parseFloat(candidate)) && isFinite(candidate);
     });
 ```
-####router.route(path)
+#### router.route(path)
 返回一个单例模式的路由的实例，之后你可以在其上施加各种HTTP动作的中间件。使用`app.route()`来避免重复路由名字(因此错字错误)--后面这句不知道说的什么鬼，大概的意思就是避免同一个路径有两个路由实例。
 构建在上面的`router.param()`例子之上，下面的代码展示了怎么使用`router.route()`来指定各种HTTP方法的处理句柄。
 ```js
@@ -1793,7 +1793,7 @@ router.route('/users/:user_id')
 ```
 这种方法重复使用单个`/usrs/:user_id`路径来添加了各种的HTTP方法。
 
-####router.use([path], [function, ...] function)
+#### router.use([path], [function, ...] function)
 给可选的`path`参数指定的路径挂载给定的中间件方法，未指定`path`参数，默认值为`/`。
 这个方法类似于`app.use()`。一个简单的例子和用例在下面描述。查阅[app.use()][56]获得更多的信息。
 中间件就像一个水暖管道，请求在你定义的第一个中间件处开始，顺着中间件堆栈一路往下，如果路径匹配则处理这个请求。
