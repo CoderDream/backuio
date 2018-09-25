@@ -1,3 +1,26 @@
+2018年第38周（2018/09/17~2018/09/23）
+----------
+1. [Getting started with Electron in WebStorm](https://blog.jetbrains.com/webstorm/2016/05/getting-started-with-electron-in-webstorm/) 
+2. [taobao electron mirrors](http://npm.taobao.org/mirrors/electron/2.0.9/)
+3. [electron 完整项目构建过程](https://blog.csdn.net/changhuzhao/article/details/78684967?tdsourcetag=s_pctim_aiomsg)
+4. [NodeJS日期格式化](https://www.npmjs.com/package/date-format-lite)
+5. [NodeJs forEach循环](https://blog.csdn.net/u011127019/article/details/52134699)
+6. [《nodejs开发指南》for与forEach之间的差别](https://cnodejs.org/topic/52e8e78a953654bb712654cb)
+7. [JavaScript 标准库 Set](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set)
+8. [NodeJS 随机数](https://www.npmjs.com/package/random-int)
+9. [日期比较](https://www.npmjs.com/package/compare-dates)
+10. [node.js-ORM数据库框架sequelize使用总结 超时查询、缓存查询、多表关联查询(TODO)](https://blog.csdn.net/q3585914/article/details/78470649)
+11. [SQLServer 日期函数大全](https://www.cnblogs.com/zhangpengnike/p/6122588.html)
+
+2018年第37周（2018/09/10~2018/09/16）
+----------
+1. [Seneca ：NodeJS 微服务框架入门指南](https://segmentfault.com/a/1190000008501410) 
+2. [mongoDB 学习笔记纯干货](https://www.imooc.com/article/19162)
+3. [Mongoose增查改删学习笔记](https://www.jianshu.com/p/2f54b90efe15)
+4. [Mongoose教程翻译](https://www.jianshu.com/p/594a1b73e54a)
+5. [测试框架Mocha](https://blog.csdn.net/hustzw07/article/details/73468970)
+6. [学习测试框架Mocha](https://www.cnblogs.com/tugenhua0707/p/8419534.html)
+
 2018年第36周（2018/09/03~2018/09/09）
 ----------
 1. [从零开始nodejs系列文章](http://blog.fens.me/series-nodejs/) 
@@ -12,7 +35,10 @@
 10. [使用Travis进行持续集成(Java)](https://www.liaoxuefeng.com/article/0014631488240837e3633d3d180476cb684ba7c10fda6f6000)
 11. [Travis CI 系列：自动化部署博客(php)](https://segmentfault.com/a/1190000011218410)
 12. [Nodejs开源项目里怎么样写测试、CI和代码测试覆盖率](https://cnodejs.org/topic/558df089ebf9c92d17e73358) 
-13. [Express 4.x API](https://coderdream.github.io/Express_4.x_API_Chinese)
+13. [Express 4.x API](https://www.zybuluo.com/XiangZhou/note/208532)
+14. [Gulp 入门指南](https://github.com/cramonDE/gulp-book)
+15. [CentOS 7.2重启网络报错 Failed to start LSB: Bring up/down---liux报错](https://blog.csdn.net/debimeng/article/details/74296152?utm_source=itdadao&utm_medium=referral)
+16. [Centos7 安装PhantomJS](https://blog.csdn.net/lingbo229/article/details/79019658)
 
 2018年第35周（2018/08/27~2018/09/02）
 ----------

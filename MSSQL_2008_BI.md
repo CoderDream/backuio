@@ -1,0 +1,161 @@
+<span id= "20183501">MS SQL Server 2008 BI 最佳实践</span>
+----------
+
+D:\BaiudYunDisk\ofm_odi_win_11.1.1.3.0_32_disk1_1of1\Disk1\install\win32>setup.exe -jreLoc c:\Java\jdk17
+
+下载
+```shell
+$ wget http://downloads.mongodb.org/linux/mongodb-linux-x86_64-4.1.1.tgz
+```
+查进程
+```shell
+$ ps aux | grep mongod
+```
+杀进程
+```shell
+$ kill -9 XXXX
+```
+
+<span id= "20183502">CentOS查看和修改PATH环境变量的方法</span>
+----------
+
+查看PATH：
+```shell
+$ echo $PATH
+```
+
+以添加mongodb server为列
+### 修改方法一： ###
+```shell
+$ export PATH=/usr/local/mongodb/bin:$PATH
+```
+//配置完后可以通过echo $PATH查看配置结果。
+生效方法：立即生效
+有效期限：临时改变，只能在当前的终端窗口中有效，当前窗口关闭后就会恢复原有的path配置
+用户局限：仅对当前用户
+
+### 修改方法二：
+通过修改.bashrc文件:
+vim ~/.bashrc 
+//在最后一行添上：
+```shell
+$ export PATH=/usr/local/mongodb/bin:$PATH
+```
+生效方法：（有以下两种）
+1、关闭当前终端窗口，重新打开一个新终端窗口就能生效
+2、输入“source ~/.bashrc”命令，立即生效
+有效期限：永久有效
+用户局限：仅对当前用户
+
+### 修改方法三:
+通过修改profile文件:
+```shell
+$ vim /etc/profile
+```
+
+/export PATH //找到设置PATH的行，添加
+
+```shell
+$ export PATH=/usr/local/mongodb/bin:$PATH
+```
+生效方法：系统重启
+有效期限：永久有效
+用户局限：对所有用户
+
+### 修改方法四: ###
+通过修改environment文件:
+```shell
+$ vim /etc/environment
+```
+
+在PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"中加入“:/usr/local/mongodb/bin”
+```shell
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/mongodb/bin
+```
+生效方法：系统重启
+有效期限：永久有效
+用户局限：对所有用户
+
+<span id= "20183503">CentOS下手动安装gcc最佳实践</span>
+----------
+
+### 1 获取安装包并解压 ###
+```shell
+wget https://ftp.gnu.org/gnu/gcc/gcc-8.2.0/gcc-8.2.0.tar.gz
+tar -jxvf gcc-8.2.0.tar.gz
+```
+
+### 2 下载供编译需求的依赖项 ###
+
+
+```shell
+cd gcc-8.2.0
+./contrib/download_prerequisites
+```
+
+### 3 建立一个目录供编译出的文件存放 ###
+
+
+```shell
+mkdir gcc-build-8.2.0
+cd gcc-build-8.2.0
+```
+
+### 4 生成Makefile文件 ###
+
+```shell
+../configure -enable-checking=release -enable-languages=c,c++ -disable-multilib
+```
+
+### 5 编译（注意：此步骤非常耗时） ###
+
+
+```shell
+make -j4
+```
+-j4选项是make对多核处理器的优化，如果不成功请使用 make
+
+
+### 6 安装 ###
+
+```shell
+sudo make install
+```
+
+ ### 7 验证安装 ###
+```shell
+gcc -v
+```
+
+<span id= "20183504">CentOS下手动安装nodejs最佳实践</span>
+----------
+
+On RHEL, CentOS or Fedora, for Node.js v8 LTS:
+```shell
+curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+```
+Alternatively for Node.js 10:
+```shell
+curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
+```
+Then install:
+```shell
+sudo yum -y install nodejs
+```
+Optional: install build tools
+
+To compile and install native addons from npm you may also need to install build tools:
+```shell
+sudo yum install gcc-c++ make
+# or: sudo yum groupinstall 'Development Tools'
+```
+
+
+
+
+
+
+
+
+
+
