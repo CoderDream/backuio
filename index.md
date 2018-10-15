@@ -1,3 +1,38 @@
+2018年第42周（2018/10/15~2018/10/21）
+----------
+1. [WebStorm mac下如何安装WebStorm + 破解](https://www.cnblogs.com/cui-cui/p/8507435.html)
+
+```sql
+select TMWorkID,WorkID from (
+SELECT distinct WorkID,TMWorkID
+  FROM DEV_BSD_IDLE
+  ) a where a.WorkID in ('B-13158','B-40060','B-27486');
+```
+
+
+
+2018年第41周（2018/10/08~2018/10/14）
+----------
+1. [nodejs -- 执行bat脚本](https://blog.csdn.net/dongmelon/article/details/78686344)
+2. [第一次编写bat脚本](https://www.jianshu.com/p/8ef89220545f)
+3. [nodejs读取文件时相对路径的正确写法(使用fs模块)](https://blog.csdn.net/chenyufeng1991/article/details/60474644)
+4. [Node.js 中 __dirname 和 ./ 的区别](https://blog.csdn.net/zsensei/article/details/79094714)
+5. [Node.js调用cmd输出中文乱码](https://blog.csdn.net/liuyaqi1993/article/details/78723797)
+6. [NodeJs测试框架Mocha的安装与使用](https://www.cnblogs.com/JessicaIsEvolving/p/9471188.html)
+7. [ES6 Promise 用法讲解](https://www.cnblogs.com/whybxy/p/7645578.html)
+8. [细嗅Promise](https://www.cnblogs.com/hustskyking/p/promise.html)
+9. [VMware15安装MAC（MAC OS 10.13）(OS X 10.14)原版可升级最新可解锁macOS Unlocker3.0（OS X 10.13）](https://blog.csdn.net/weixin_43299649/article/details/82881567)
+10. [VMWare15 安装 Mac OS 系统](https://blog.csdn.net/galaxy_yyg/article/details/82891044)
+
+2018年第39周（2018/09/24~2018/09/30）
+----------
+1. [SSIS学习系列文章](https://www.cnblogs.com/gudujianxiao/category/350476.html)
+2. [Cookie和Session在Node.JS中的实践（一）](https://www.cnblogs.com/wljqds/p/cookie_session_node.html)
+3. [Cookie和Session在Node.JS中的实践（二）](https://www.cnblogs.com/wljqds/p/session.html)
+4. [npm install "Unexpected end of JSON input while parsing near"问题](https://www.cnblogs.com/jianxuanbing/p/9158830.html)
+5. [如何为 Markdown 文件自动生成目录](https://www.jianshu.com/p/4721ddd27027)
+
+
 2018年第38周（2018/09/17~2018/09/23）
 ----------
 1. [Getting started with Electron in WebStorm](https://blog.jetbrains.com/webstorm/2016/05/getting-started-with-electron-in-webstorm/) 
