@@ -1,14 +1,8 @@
 2018年第42周（2018/10/15~2018/10/21）
 ----------
 1. [WebStorm mac下如何安装WebStorm + 破解](https://www.cnblogs.com/cui-cui/p/8507435.html)
-
-```sql
-select TMWorkID,WorkID from (
-SELECT distinct WorkID,TMWorkID
-  FROM DEV_BSD_IDLE
-  ) a where a.WorkID in ('B-13158','B-40060','B-27486');
-```
-
+2. [Nodejs进阶：如何玩转子进程（child_process）（TODO）](https://segmentfault.com/a/1190000007735211)
+3. [child_process - 子进程 - 官方教程](http://nodejs.cn/api/child_process.html#child_process_spawning_bat_and_cmd_files_on_windows)
 
 
 2018年第41周（2018/10/08~2018/10/14）
