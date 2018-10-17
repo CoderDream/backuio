@@ -3,6 +3,8 @@
 1. [WebStorm mac下如何安装WebStorm + 破解](https://www.cnblogs.com/cui-cui/p/8507435.html)
 2. [Nodejs进阶：如何玩转子进程（child_process）（TODO）](https://segmentfault.com/a/1190000007735211)
 3. [child_process - 子进程 - 官方教程](http://nodejs.cn/api/child_process.html#child_process_spawning_bat_and_cmd_files_on_windows)
+4. [解决虚拟机中安装的mac os系统无法识别ios设备的问题](https://blog.csdn.net/jiuluguoshidai/article/details/51583684)
+5. [【Node.js】'readline' 逐行读取、写入文件内容](https://blog.csdn.net/sodino/article/details/51275638)
 
 
 2018年第41周（2018/10/08~2018/10/14）
