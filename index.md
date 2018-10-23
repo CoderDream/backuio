@@ -1,3 +1,12 @@
+2018年第43周（2018/10/22~2018/10/28）
+----------
+1. [XCode常用快捷键的使用](https://blog.csdn.net/u014351782/article/details/49794491)
+2. [Chrome同步助手 借助插件实现国内环境同步浏览器数据](https://yantuz.cn/373.html)
+3. [解决新版chrome无法手动拖动安装插件 提示“无法从该网站添加应用，扩展程序和用户脚本”](http://www.cnblogs.com/guoxiangyue/p/9598961.html)
+4. [关于Google下插件SwitchyOmega用法](https://www.cnblogs.com/supermarx/p/7762828.html)
+
+
+
 2018年第42周（2018/10/15~2018/10/21）
 ----------
 1. [WebStorm mac下如何安装WebStorm + 破解](https://www.cnblogs.com/cui-cui/p/8507435.html)
@@ -5,6 +14,7 @@
 3. [child_process - 子进程 - 官方教程](http://nodejs.cn/api/child_process.html#child_process_spawning_bat_and_cmd_files_on_windows)
 4. [解决虚拟机中安装的mac os系统无法识别ios设备的问题](https://blog.csdn.net/jiuluguoshidai/article/details/51583684)
 5. [【Node.js】'readline' 逐行读取、写入文件内容](https://blog.csdn.net/sodino/article/details/51275638)
+6. [Xcode：Home键光标移动到行首和End键光标移动到行尾](https://www.cnblogs.com/yipu/archive/2013/03/14/2958977.html)
 
 
 2018年第41周（2018/10/08~2018/10/14）
