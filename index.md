@@ -8,6 +8,7 @@
 6. [用OCLint给iOS代码做静态分析 - TODO](https://blog.csdn.net/uxyheaven/article/details/50818107)
 7. [SQLServer 数据库查看各表的记录数](https://coderdream.github.io/201843#20184301)
 8. [SQLServer 查询所有表名和表结构](https://coderdream.github.io/201843#20184302)
+9. [SQLServer 数据库拷贝](https://coderdream.github.io/201843#20184303)
 
 2018年第42周（2018/10/15~2018/10/21）
 ----------
