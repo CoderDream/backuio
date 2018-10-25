@@ -4,8 +4,10 @@
 2. [Chrome同步助手 借助插件实现国内环境同步浏览器数据](https://yantuz.cn/373.html)
 3. [解决新版chrome无法手动拖动安装插件 提示“无法从该网站添加应用，扩展程序和用户脚本”](http://www.cnblogs.com/guoxiangyue/p/9598961.html)
 4. [关于Google下插件SwitchyOmega用法](https://www.cnblogs.com/supermarx/p/7762828.html)
-
-
+5. [No such module 'Cocoa' in Swift Playground](https://stackoverflow.com/questions/24099364/no-such-module-cocoa-in-swift-playground)
+6. [用OCLint给iOS代码做静态分析 - TODO](https://blog.csdn.net/uxyheaven/article/details/50818107)
+7. [SQLServer 数据库查看各表的记录数](https://coderdream.github.io/201843#20184301)
+8. [SQLServer 查询所有表名和表结构](https://coderdream.github.io/201843#20184302)
 
 2018年第42周（2018/10/15~2018/10/21）
 ----------
