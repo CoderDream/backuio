@@ -9,6 +9,7 @@
 7. [SQLServer 数据库查看各表的记录数](https://coderdream.github.io/201843#20184301)
 8. [SQLServer 查询所有表名和表结构](https://coderdream.github.io/201843#20184302)
 9. [SQLServer 数据库拷贝](https://coderdream.github.io/201843#20184303)
+10. [Notepad++及实用插件安装](https://coderdream.github.io/201843#20184304)
 
 2018年第42周（2018/10/15~2018/10/21）
 ----------
