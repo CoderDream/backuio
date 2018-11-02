@@ -1,3 +1,13 @@
+
+2018年第44周（2018/10/29~2018/11/04）
+----------
+1. [2018最新谷歌账号注册方法，注册Gmail有效方法](https://jingyan.baidu.com/article/fb48e8bee0f8446e622e1416.html)
+2. [为VMWare中的Mac OS X 10.11硬盘扩容](https://blog.csdn.net/andyxia/article/details/50684133)
+3. [AdventureWorks2008R2数据库](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2008r2)
+4. [Swift 编程入门](https://www.cnblogs.com/blogernice/articles/9857154.html)
+5. [SSIS 教程：创建简单的 ETL 包 https://docs.microsoft.com/zh-cn/previous-versions/sql/sql-server-2008-r2/ms169917(v%3dsql.105)  ](https://docs.microsoft.com/zh-cn/previous-versions/sql/sql-server-2008-r2/ms169917(v%3dsql.105) 
+6. [PDF文档时如何实现全屏模式下的双页观看](https://www.zhihu.com/question/21230857)
+
 2018年第43周（2018/10/22~2018/10/28）
 ----------
 1. [XCode常用快捷键的使用](https://blog.csdn.net/u014351782/article/details/49794491)
