@@ -1,4 +1,34 @@
 
+2018年第46周（2018/11/12~2018/11/18）
+----------
+1. [Swift中 ！和 ？的区别及使用](https://www.jb51.net/article/100382.htm)
+2. [全网首发联想小新V3000装黑苹果UEFI+GPT+ CLOVER引导+双系统+双硬盘](http://blog.sina.com.cn/s/blog_4ddc30040102wdjz.html)
+3. [Xshell 6 Download](https://www.netsarang.com/download/down_form.html?code=622)
+4. [Xftp 6 Download](https://www.netsarang.com/download/down_form.html?code=623)
+5. [CentOS7系统下 docker 环境搭建](http://www.cnblogs.com/zhouyalei/p/6390979.html)
+6. [制作docker-jdk7-zookeeper镜像(非集群版)](https://www.cnblogs.com/zhouyalei/p/6400951.html)
+7. [CentOS7系统下搭建docker本地镜像仓库](https://www.cnblogs.com/zhouyalei/p/6411614.html)
+8. [免AHCI补丁](http://bbs.pcbeta.com/viewthread-1613797-1-1.html)
+9. [老古董电脑P35主板+ICH9, 没有ACHI选项怎么破?](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1753051&highlight=ACHI)
+10. [主板BIOS下无AHCI设置，装OS X 10.9.2成功，分享有效补丁](http://bbs.pcbeta.com/viewthread-1499277-1-1.html)
+11. [几乎完美8700k/8600k + z370 HD3 + 英伟达显卡+10.13.5的EFI分享](http://bbs.pcbeta.com/viewthread-1788946-1-1.html)
+12. [黑苹果工具箱，福音来了，随便挑随便选！！！](http://bbs.pcbeta.com/viewthread-1773155-1-1.html)
+13. [Windows 7下硬盘安装黑苹果Mac OS X图文教程](https://jingyan.baidu.com/article/a378c960ee45e2b3282830b0.html)
+14. [Windows环境下使用Clover四叶草引导双硬盘安装OSX 10.11.5原版镜像](https://www.cnblogs.com/Mr-Owl/p/5580479.html)
+15. [黑苹果安装从0开始----clover优盘引导改硬盘引导篇]()
+16. [在 win7 / win8 下安装苹果系统 (懒人版)](http://bbs.pcbeta.com/viewthread-1169005-1-1.html)
+17. [重大更新Clover_v2.4k_r4757安装界面改版 支持10.14 Mojave](http://bbs.pcbeta.com/viewthread-1740837-1-1.html)
+18. [配置是I5-7600K+技嘉Z270X-UD3+GTX 1050+简单利用Clover四叶草安装U盘安装黑苹果](http://bbs.pcbeta.com/viewthread-1762375-1-1.html)
+19. [Dell optiplex 390 安装 El Capitan](http://bbs.pcbeta.com/viewthread-1665056-1-1.html)
+20. [关于dell optiplex 390安装黑苹果的解决方案](http://bbs.pcbeta.com/viewthread-1420871-1-1.html)
+21. [Hackintosh](https://coderdream.github.io/Hackintosh)
+
+2018年第45周（2018/11/05~2018/11/11）
+----------
+1. [iOS9 不能正常使用 Http 的解决方法](https://www.jianshu.com/p/b4389e7346d2)
+2. [计算数据库中各个表的数据量和每行记录所占用空间](http://www.cnblogs.com/yzwdli/p/5337881.html)
+3. [](http://blog.sina.com.cn/s/articlelist_1436983063_12_1.html)
+
 2018年第44周（2018/10/29~2018/11/04）
 ----------
 1. [2018最新谷歌账号注册方法，注册Gmail有效方法](https://jingyan.baidu.com/article/fb48e8bee0f8446e622e1416.html)
