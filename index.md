@@ -1,3 +1,8 @@
+2018年第47周（2018/11/19~2018/11/25）
+----------
+1. [BI SSIS应用系列之发送邮件](https://blog.csdn.net/oriency755/article/details/8255733)
+2. [C#使用 System.Net.Mail发送邮件功能](https://www.cnblogs.com/izhaofu/p/4730263.html) 
+3. [KMS在线激活windows 10 / 8 / 7和office 2019 / 2016 / 2013 /2010之MicroKMS 神龙版](http://www.yishimei.cn/network/319.html)
 
 2018年第46周（2018/11/12~2018/11/18）
 ----------
