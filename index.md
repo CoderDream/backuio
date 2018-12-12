@@ -1,3 +1,9 @@
+2018年第50周（2018/12/10~2018/12/16）
+----------
+1. [免费网络请求测试](https://httpbin.org/)
+2. [RC交付人员导入笔记](https://coderdream.github.io/201850)
+
+
 2018年第47周（2018/11/19~2018/11/25）
 ----------
 1. [BI SSIS应用系列之发送邮件](https://blog.csdn.net/oriency755/article/details/8255733)
