@@ -2,6 +2,7 @@
 ----------
 1. [dyld`__abort_with_payload: With no error message](https://stackoverflow.com/questions/42027601/dyld-abort-with-payload-with-no-error-message)
 2. [所有 iOS 译文](https://github.com/xitu/gold-miner/blob/master/ios.md)
+3. [CentOS7下安装 DNS](https://coderdream.github.io/DNS_NGINX#20185101)
 
 2018年第50周（2018/12/10~2018/12/16）
 ----------
