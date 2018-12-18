@@ -1,3 +1,8 @@
+2018年第51周（2018/12/17~2018/12/23）
+----------
+1. [dyld`__abort_with_payload: With no error message](https://stackoverflow.com/questions/42027601/dyld-abort-with-payload-with-no-error-message)
+2. [所有 iOS 译文](https://github.com/xitu/gold-miner/blob/master/ios.md)
+
 2018年第50周（2018/12/10~2018/12/16）
 ----------
 1. [免费网络请求测试](https://httpbin.org/)
@@ -7,8 +12,9 @@
 2018年第47周（2018/11/19~2018/11/25）
 ----------
 1. [BI SSIS应用系列之发送邮件](https://blog.csdn.net/oriency755/article/details/8255733)
-2. [C#使用 System.Net.Mail发送邮件功能](https://www.cnblogs.com/izhaofu/p/4730263.html) 
-3. [KMS在线激活Windows和Office之MicroKMS 神龙版](https://coderdream.github.io/tools/MicroKMS_v18.10.06.rar)
+2. [SSIS 发送邮件(HTML格式)](https://www.cnblogs.com/ljhdo/p/4844119.html)
+3. [C#使用 System.Net.Mail发送邮件功能](https://www.cnblogs.com/izhaofu/p/4730263.html)
+4. [KMS在线激活Windows和Office之MicroKMS 神龙版](https://coderdream.github.io/tools/MicroKMS_v18.10.06.rar)
 
 2018年第46周（2018/11/12~2018/11/18）
 ----------
