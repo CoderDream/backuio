@@ -3,6 +3,12 @@
 1. [dyld`__abort_with_payload: With no error message](https://stackoverflow.com/questions/42027601/dyld-abort-with-payload-with-no-error-message)
 2. [所有 iOS 译文](https://github.com/xitu/gold-miner/blob/master/ios.md)
 3. [CentOS7下安装 DNS](https://coderdream.github.io/DNS_NGINX#20185101)
+4. [CentOS7使用firewalld打开关闭防火墙与端口](https://www.cnblogs.com/moxiaoan/p/5683743.html)
+5. [CentOS 7 安装Nginx 并配置自动启动](http://www.cnblogs.com/starksoft/p/9292794.html)
+6. [Linux安装nginx](https://www.cnblogs.com/jimisun/p/8057156.html)
+7. [CentOS自动安装nginx(shell脚本方式)](https://blog.csdn.net/wangfei0904306/article/details/70561971)
+8. [CentOS7 DNS服务器安装与配置](https://github.com/chenqingwh/node-micirservice-platform/blob/master/docs/dns_setupandconfig.md)
+9. [CentOS7 Nginx安装与配置](https://github.com/chenqingwh/node-micirservice-platform/blob/master/docs/nginx_setupandconfig.md)
 
 2018年第50周（2018/12/10~2018/12/16）
 ----------
