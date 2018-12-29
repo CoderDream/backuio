@@ -10,7 +10,12 @@
 8. [Activiti6.0踩坑记录（一）-用admin登录后台配置终端提示“Endpoint configuration for 'Activiti app' is invalid](https://blog.csdn.net/qq_19734597/article/details/84440287)
 9. [简书Activiti文章](https://www.jianshu.com/nb/31974153)
 10. [Spring-Boot + Mybatis 综合模块化开发,合并打包](https://github.com/Yiyuery/capsule-web)
-11. [](https://www.activiti.org/userguide/)
+11. [activiti userguide](https://www.activiti.org/userguide/)
+12. [https://www.activiti.org/quick-start](https://www.activiti.org/quick-start)
+13. [Activiti相关博文](http://www.kafeitu.me/activiti.html)
+14. [Activiti工作流 - 11篇](https://blog.csdn.net/acmman/article/category/6732665)
+15. [1.工作流概念](https://blog.csdn.net/acmman/article/details/55662160)
+16. [1.Activiti6-快速开始](https://blog.csdn.net/gaojingyuan/article/details/78979716)
 
 2018年第51周（2018/12/17~2018/12/23）
 ----------
