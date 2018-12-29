@@ -12,6 +12,7 @@
 
 
 
+
 ## 其他
 
 1. [使用Hbuilder将自己app发布到App Store（一）](https://www.cnblogs.com/provedl/p/9830061.html)
@@ -21,3 +22,7 @@
 5. [关于Xcode10的那些事](https://www.cnblogs.com/zhanggui/p/9686155.html)
 6. [iOS 类似微博或朋友圈的信息流](https://www.cnblogs.com/alan12138/p/9619336.html)
 7. [Swift基础语法](https://www.cnblogs.com/jordanYang/archive/2016/04.html)
+8. [用 SpriteKit 和 Swift3 创建交互式儿童读物](https://blog.csdn.net/kmyhy/article/details/68488986)
+9. [2D Apple Games by Tutorials Source Code-Swift4](https://store.raywenderlich.com/products/2d-apple-games-by-tutorials-source-code)
+10. [iOS开发问与答系列](https://blog.csdn.net/kmyhy/column/info/14060)
+11. [iOS动画专栏](https://blog.csdn.net/kmyhy/column/info/13913)

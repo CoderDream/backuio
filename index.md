@@ -1,3 +1,17 @@
+2018年第52周（2018/12/24~2018/12/30）
+----------
+1. [TeamViewer无限自动改ID版 V14.0.13488.0绿色版](https://www.cr173.com/soft/856150.html)
+2. [Failed to load the JNI shared library 解决方法](https://blog.csdn.net/qq_27937043/article/details/74025150)
+3. [一个简单 Web App 用于查看你的 GitHub star 总数以及项目排行版](https://www.v2ex.com/t/348114)
+4. [查看自己的项目fork和star](https://blog.csdn.net/qqxx6661/article/details/71106434)
+5. [关于mysql-connector-java（JDBC驱动）的一些坑](https://www.cnblogs.com/skyshalo/p/7251378.html)
+6. [查看mysql库中所有表的大小和记录数](https://www.cnblogs.com/gyfluck/p/9881762.html)
+7. [中国游戏市场增长放缓 但已爆发的小游戏2019年更值得期待](https://hot.cnbeta.com/articles/game/802833)
+8. [Activiti6.0踩坑记录（一）-用admin登录后台配置终端提示“Endpoint configuration for 'Activiti app' is invalid](https://blog.csdn.net/qq_19734597/article/details/84440287)
+9. [简书Activiti文章](https://www.jianshu.com/nb/31974153)
+10. [Spring-Boot + Mybatis 综合模块化开发,合并打包](https://github.com/Yiyuery/capsule-web)
+11. [](https://www.activiti.org/userguide/)
+
 2018年第51周（2018/12/17~2018/12/23）
 ----------
 1. [dyld`__abort_with_payload: With no error message](https://stackoverflow.com/questions/42027601/dyld-abort-with-payload-with-no-error-message)
