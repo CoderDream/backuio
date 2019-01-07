@@ -1,3 +1,16 @@
+2019年第2周（2019/01/07~2019/01/13）
+----------
+1. [eclipse的.properties文件中文显示问题](https://www.cnblogs.com/jpfss/p/8037838.html)
+2. [关于项目报错Dynamic Web Module 3.0 requires Java 1.6 or newer 的解决方法](https://www.cnblogs.com/goldenVip/p/6278377.html)
+3. [Windows下IDEA的terminal配置bash命令](http://www.cnblogs.com/xxoome/p/10030724.html)
+
+2019年第1周（2018/12/31~2019/01/06）
+----------
+1. [用Windows 10太卡？教你快速干掉Windows Defender](https://www.cnbeta.com/articles/tech/804437.htm)
+2. [BPMN2.0中文版](https://www.cnblogs.com/javaleon/p/4220027.html)
+3. [JUnit单元测试使用log4j输出日志](https://blog.csdn.net/qq_33458228/article/details/80810280)
+
+
 2018年第52周（2018/12/24~2018/12/30）
 ----------
 1. [TeamViewer无限自动改ID版 V14.0.13488.0绿色版](https://www.cr173.com/soft/856150.html)
