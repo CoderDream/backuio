@@ -3,6 +3,8 @@
 1. [eclipse的.properties文件中文显示问题](https://www.cnblogs.com/jpfss/p/8037838.html)
 2. [关于项目报错Dynamic Web Module 3.0 requires Java 1.6 or newer 的解决方法](https://www.cnblogs.com/goldenVip/p/6278377.html)
 3. [Windows下IDEA的terminal配置bash命令](http://www.cnblogs.com/xxoome/p/10030724.html)
+4. [eclipse/intellij idea 查看java源码和注释](https://www.cnblogs.com/hdwang/p/6875416.html)
+5. [Eclipse查看Servlet源码](https://blog.csdn.net/u013823429/article/details/66982245)
 
 2019年第1周（2018/12/31~2019/01/06）
 ----------
